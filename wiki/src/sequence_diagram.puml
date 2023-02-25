@@ -1,0 +1,17 @@
+@startuml
+  !define DARKORANGE
+  !include style.puml
+  skinparam actorStyle awesome
+  skinparam SequenceBoxBorderColor #Blue
+
+  actor SimRacer as "Sim Racer"
+  participant ArduinoPedalbox as "Arduino PedalBox"
+  actor SimPC as "Sim PC"
+
+  'start sequence
+  == Braking ==
+
+  SimRacer -> ArduinoPedalbox : brake pedal force
+  ArduinoPedalbox -> SimPC : brake input signal
+
+@enduml
