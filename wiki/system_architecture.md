@@ -2,4 +2,4 @@
 
 ## System Architecture
 
-![system architecture](src/System%20Architecture.svg)
+![system architecture](src/system_architecture.svg)
