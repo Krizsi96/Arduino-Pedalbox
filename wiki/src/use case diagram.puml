@@ -1,0 +1,19 @@
+@startuml Use Case Diagram
+  !define DARKORANGE
+  !include style.puml
+
+  skinparam actorStyle awesome
+  left to right direction
+
+  actor SimRacer as "Sim Racer"
+  actor SimPC as "Sim PC"
+
+  rectangle "Arduino Pedalbox" {
+    usecase Brake as "Push brake pedal" <<Use Case>>
+    usecase ReadSignal as "Read signal" <<Use Case>>
+
+    SimRacer -- Brake
+    Brake -- ReadSignal
+    ReadSignal -- SimPC
+  }
+@enduml
