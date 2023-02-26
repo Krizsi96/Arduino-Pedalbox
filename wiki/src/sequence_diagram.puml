@@ -7,7 +7,7 @@
   actor SimRacer as "Sim Racer"
 
   box "Arduino Pedalbox"
-  participant ConvertAD as "HX711 Library"
+  participant ConvertAD as "HX711 Arduino Library"
   participant Signal
   participant SerialCommunication as "Serial Communication"
   end box
