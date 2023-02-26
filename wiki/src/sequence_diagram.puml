@@ -31,7 +31,7 @@
 
   Arduino -> SimPC : Serial.begin()
   alt USB CDC serial connection is not open
-    group while [not available]
+    group while [not open]
       SimPC --> Arduino : not ok
       Arduino -> SimRacer : error indication
       Arduino -> SimPC : start serial \ncommunication
