@@ -15,13 +15,13 @@
   == Initialization ==
   Arduino -> Signal : create
   Signal -> ConvertAD : create
-  Signal -> ConvertAD : begin()
+  Signal -> ConvertAD : start communication
   alt HX711 not available
     group while [no response]
       ...timout 1 second...
       Signal -> Arduino : error request
       Arduino -> SimRacer : error indication
-      Arduino -> ConvertAD : start communication
+      Signal -> ConvertAD : start communication
     end
   else HX711 available
       ConvertAD --> Signal : ok
@@ -47,7 +47,7 @@
     ConvertAD -> SimRacer : get force
     SimRacer --> ConvertAD : brake pedal force
     ConvertAD --> Signal : measurement //long//
-    Signal -> Arduino : sendSerial(measurement)
+    Signal -> Arduino : brake signal
     Arduino -> SimPC : brake input signal
     SimPC --> SimRacer : decceleration
   else
