@@ -15,7 +15,7 @@
     }
     package ArduinoBox {
       usecase ReadSignal as "Read signal" <<Use Case>>
-      usecase ReceiveSignal as "Receive signal input" <<Use Case>>
+      usecase ReceiveSignal as "Receive game \ncontroller input" <<Use Case>>
     }
 
     SimRacer -- Brake
