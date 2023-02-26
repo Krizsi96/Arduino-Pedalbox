@@ -9,11 +9,18 @@
   actor SimPC as "Sim PC"
 
   rectangle "Arduino Pedalbox" {
-    usecase Brake as "Push brake pedal" <<Use Case>>
-    usecase ReadSignal as "Read signal" <<Use Case>>
+    package Pedalbox {
+      usecase Brake as "Push brake pedal" <<Use Case>>
+      usecase ADConvert as "convert signal A/D" <<Use Case>>
+    }
+    package ArduinoBox {
+      usecase ReadSignal as "Read signal" <<Use Case>>
+      usecase ReceiveSignal as "Receive signal input" <<Use Case>>
+    }
 
     SimRacer -- Brake
-    Brake -- ReadSignal
-    ReadSignal -- SimPC
+    Brake ..> ReadSignal : <<include>>
+    ADConvert ..> ReadSignal : <<extend>>
+    ReceiveSignal -- SimPC
   }
 @enduml
