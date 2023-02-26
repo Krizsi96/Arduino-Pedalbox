@@ -1,5 +1,5 @@
 @startuml Sequence Diagram
-  !define DARKORANGE
+  !define LIGHTORANGE
   !include style.puml
   skinparam actorStyle awesome
   skinparam SequenceBoxBorderColor #Blue
@@ -16,8 +16,8 @@
   'sequences
   == Initialization ==
   Communication -> SimPC : start serial \ncommunication
-  alt #853c01 serial port not available
-    loop
+  alt serial port not available
+    group while [not available]
       SimPC --> Communication : not ok
       Communication -> SimRacer : error indication
       Communication -> SimPC : start serial \ncommunication
@@ -25,10 +25,11 @@
   else serial port available
       SimPC --> Communication : ok
   end
+  Communication -> SimRacer : communication OK indication
 
   Communication -> ConvertAD : start communication
-  alt #853c01 HX711 not available
-    loop
+  alt HX711 not available
+    group while [no response]
       ...1 second later...
       Communication -> SimRacer : error indication
       Communication -> ConvertAD : start communication
@@ -40,10 +41,17 @@
   Communication -> SimRacer : communication OK indication
 
   == Braking ==
-  SimRacer -> ConvertAD : brake pedal force
-  ConvertAD -> Signal : digital measurement
-  Signal -> Communication : brake measurement
-  Communication -> SimPC : brake input signal
-  SimPC --> SimRacer : decceleration
+  Signal -> ConvertAD : get measurement
+  alt 
+    ConvertAD -> SimRacer : get force
+    SimRacer --> ConvertAD : brake pedal force
+    ConvertAD --> Signal : digital measurement
+    Signal -> Communication : brake measurement
+    Communication -> SimPC : brake input signal
+    SimPC --> SimRacer : decceleration
+  else
+    ...1 second later...
+    Signal -> SimRacer : error indication
+  end
 
 @enduml
