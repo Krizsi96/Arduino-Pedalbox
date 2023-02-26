@@ -13,6 +13,22 @@
 
   'sequences
   == Initialization ==
+  Arduino -> Signal : create
+  Signal -> ConvertAD : create
+  Signal -> ConvertAD : begin()
+  alt HX711 not available
+    group while [no response]
+      ...timout 1 second...
+      Signal -> Arduino : error request
+      Arduino -> SimRacer : error indication
+      Arduino -> ConvertAD : start communication
+    end
+  else HX711 available
+      ConvertAD --> Signal : ok
+  end
+  Signal --> Arduino : ok
+  Arduino -> SimRacer : communication OK indication
+
   Arduino -> SimPC : Serial.begin()
   alt USB CDC serial connection is not open
     group while [not available]
@@ -23,19 +39,6 @@
   else USB CDC serial connection is open
       SimPC --> Arduino : ok
   end
-  Arduino -> SimRacer : communication OK indication
-
-  Arduino -> ConvertAD : start communication
-  alt HX711 not available
-    group while [no response]
-      ...1 second later...
-      Arduino -> SimRacer : error indication
-      Arduino -> ConvertAD : start communication
-    end
-  else HX711 available
-      ConvertAD --> Arduino : ok
-  end
-
   Arduino -> SimRacer : communication OK indication
 
   == Braking ==
