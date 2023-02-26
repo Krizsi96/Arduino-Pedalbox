@@ -46,13 +46,14 @@
   alt 
     ConvertAD -> SimRacer : get force
     SimRacer --> ConvertAD : brake pedal force
-    ConvertAD --> Signal : long measurement
-    Signal -> Arduino : brake measurement
+    ConvertAD --> Signal : measurement //long//
+    Signal -> Arduino : sendSerial(measurement)
     Arduino -> SimPC : brake input signal
     SimPC --> SimRacer : decceleration
   else
-    ...1 second later...
-    Signal -> SimRacer : error indication
+    ...timeout 1 second...
+    Signal -> Arduino : error request
+    Arduino -> SimRacer : error indication
   end
 
 @enduml
