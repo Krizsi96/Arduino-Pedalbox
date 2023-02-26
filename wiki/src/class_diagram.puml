@@ -1,0 +1,10 @@
+@startuml Class Diagram
+  !define DARKSTYLE
+  !include style.puml
+
+  class Signal {
+    -int raw_signal_value
+    -int read_raw_signal_value()
+    +int get_raw_signal_value()
+  }
+@enduml
