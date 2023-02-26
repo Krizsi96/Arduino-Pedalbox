@@ -7,19 +7,43 @@
   actor SimRacer as "Sim Racer"
 
   box "Arduino Pedalbox"
-  participant ConvertAD as "HX711 Arduino Library"
+  participant ConvertAD as "HX711"
   participant Signal
-  participant SerialCommunication as "Serial Communication"
+  participant Communication as "Communication"
   end box
   actor SimPC as "Sim PC"
 
-  'start sequence
-  == Braking ==
+  'sequences
+  == Initialization ==
+  Communication -> SimPC : start serial \ncommunication
+  alt #853c01 serial port not available
+    loop
+      SimPC --> Communication : not ok
+      Communication -> SimRacer : error indication
+      Communication -> SimPC : start serial \ncommunication
+    end
+  else serial port available
+      SimPC --> Communication : ok
+  end
 
+  Communication -> ConvertAD : start communication
+  alt #853c01 HX711 not available
+    loop
+      ...1 second later...
+      Communication -> SimRacer : error indication
+      Communication -> ConvertAD : start communication
+    end
+  else HX711 available
+      ConvertAD --> Communication : ok
+  end
+
+  Communication -> SimRacer : communication OK indication
+
+  == Braking ==
   SimRacer -> ConvertAD : brake pedal force
   ConvertAD -> Signal : digital measurement
-  Signal -> SerialCommunication : brake measurement
-  SerialCommunication -> SimPC : brake input signal
+  Signal -> Communication : brake measurement
+  Communication -> SimPC : brake input signal
   SimPC --> SimRacer : decceleration
 
 @enduml
