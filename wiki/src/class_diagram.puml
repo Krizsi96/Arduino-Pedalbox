@@ -34,7 +34,26 @@
     +void power_up()
   }
 
-  class Communication {
-    
+  interface Arduino {
+    +available()
+    +availableForWrite()
+    +begin()
+    +end()
+    +find()
+    +findUntil()
+    +flush()
+    +parseFloat()
+    +parseInt()
+    +peek()
+    +print()
+    +println()
+    +read()
+    +readBytes()
+    +readBytesUntil()
+    +readString()
+    +readStringUntil()
+    +setTimeout()
+    +write()
+    +serialEvent()
   }
 @enduml
