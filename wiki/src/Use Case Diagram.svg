@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="249px" preserveAspectRatio="none" style="width:749px;height:249px;background:#FFFFFF;" version="1.1" viewBox="0 0 749 249" width="749px" zoomAndPan="magnify"><defs/><g><!--MD5=[b6536eeefd6160c95f909d3d8d0d3db9]
+cluster Arduino Pedalbox--><g id="cluster_Arduino Pedalbox"><rect fill="#CCCCCC" height="236" rx="2.5" ry="2.5" style="stroke:#AAAAAA;stroke-width:1.0;" width="528" x="112" y="7"/><text fill="#000000" font-family="Verdana" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="115" x="318.5" y="20.0591">Arduino Pedalbox</text></g><!--MD5=[b96d2fa9b25bf963003e78bb80f22a08]
+cluster Pedalbox--><g id="cluster_Pedalbox"><path d="M138.5,48 L204.5,48 A3.75,3.75 0 0 1 207,50.5 L214,71.6094 L324.5,71.6094 A2.5,2.5 0 0 1 327,74.1094 L327,215.5 A2.5,2.5 0 0 1 324.5,218 L138.5,218 A2.5,2.5 0 0 1 136,215.5 L136,50.5 A2.5,2.5 0 0 1 138.5,48 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="136" x2="214" y1="71.6094" y2="71.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="65" x="140" y="64.5332">Pedalbox</text></g><!--MD5=[07bb41d1f9596894f414a89537a4c5ea]
+cluster ArduinoBox--><g id="cluster_ArduinoBox"><path d="M417.5,47 L500.5,47 A3.75,3.75 0 0 1 503,49.5 L510,70.6094 L613.5,70.6094 A2.5,2.5 0 0 1 616,73.1094 L616,216.5 A2.5,2.5 0 0 1 613.5,219 L417.5,219 A2.5,2.5 0 0 1 415,216.5 L415,49.5 A2.5,2.5 0 0 1 417.5,47 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="415" x2="510" y1="70.6094" y2="70.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="82" x="419" y="63.5332">ArduinoBox</text></g><g id="elem_Brake"><ellipse cx="231.2721" cy="181.2129" fill="#FF8800" rx="75.2721" ry="20.7129" style="stroke:#AAAAAA;stroke-width:0.5;"/><text fill="#333333" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="60" x="196.7112" y="175.9925">«Use Case»</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="99" x="177.2112" y="189.4686">Push brake pedal</text></g><g id="elem_ADConvert"><ellipse cx="231.4795" cy="105.1321" fill="#FF8800" rx="79.4795" ry="20.6321" style="stroke:#AAAAAA;stroke-width:0.5;"/><text fill="#333333" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="60" x="196.8481" y="99.7472">«Use Case»</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="106" x="173.8481" y="113.2233">convert signal A/D</text></g><g id="elem_ReadSignal"><ellipse cx="515.5624" cy="105.0069" fill="#FF8800" rx="56.0624" ry="21.5069" style="stroke:#AAAAAA;stroke-width:0.5;"/><text fill="#333333" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="60" x="481.3069" y="101.2091">«Use Case»</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="66" x="478.3069" y="114.6852">Read signal</text></g><g id="elem_ReceiveSignal"><ellipse cx="515.3209" cy="182.0579" fill="#FF8800" rx="84.3209" ry="20.5579" style="stroke:#AAAAAA;stroke-width:0.5;"/><text fill="#333333" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="60" x="480.6075" y="176.516">«Use Case»</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="114" x="453.6075" y="189.9921">Receive signal input</text></g><!--MD5=[f200842f929e11cf96e4d9f0452bd266]
+entity SimRacer--><g id="elem_SimRacer"><ellipse cx="35.5" cy="160.5" fill="#FF8800" rx="16" ry="16" style="stroke:#BB6600;stroke-width:1.5;"/><path d="M35.5,180.5 C39.5,180.5 42.5,180.5 46.5,176.5 C54.5,176.5 62.5,184.5 62.5,192.5 L62.5,196.5 C62.5,200.5 58.5,204.5 54.5,204.5 L16.5,204.5 C12.5,204.5 8.5,200.5 8.5,196.5 L8.5,192.5 C8.5,184.5 16.5,176.5 24.5,176.5 C28.5,180.5 31.5,180.5 35.5,180.5 " fill="#FF8800" style="stroke:#BB6600;stroke-width:1.5;"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="59" x="6" y="217.0591">Sim Racer</text></g><!--MD5=[c01d84bea1ff0a138a0d86425ca17301]
+entity SimPC--><g id="elem_SimPC"><ellipse cx="715.5" cy="161.5" fill="#FF8800" rx="16" ry="16" style="stroke:#BB6600;stroke-width:1.5;"/><path d="M715.5,181.5 C719.5,181.5 722.5,181.5 726.5,177.5 C734.5,177.5 742.5,185.5 742.5,193.5 L742.5,197.5 C742.5,201.5 738.5,205.5 734.5,205.5 L696.5,205.5 C692.5,205.5 688.5,201.5 688.5,197.5 L688.5,193.5 C688.5,185.5 696.5,177.5 704.5,177.5 C708.5,181.5 711.5,181.5 715.5,181.5 " fill="#FF8800" style="stroke:#BB6600;stroke-width:1.5;"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="42" x="694.5" y="218.0591">Sim PC</text></g><!--MD5=[50c2773fbc0da26988a58888f0f061db]
+link SimRacer to Brake--><g id="link_SimRacer_Brake"><path d="M65.13,181 C88.95,181 123.96,181 155.64,181 " fill="none" id="SimRacer-Brake" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[6e3b2ba003262aad98500d0916272481]
+link Brake to ReadSignal--><g id="link_Brake_ReadSignal"><path d="M285.87,166.62 C337.13,152.8 413.97,132.09 464.18,118.56 " fill="none" id="Brake-to-ReadSignal" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="469.25,117.19,459.5196,115.6673,464.4219,118.4899,461.5994,123.3922,469.25,117.19" style="stroke:#000000;stroke-width:1.0;"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="54" x="344" y="134.0591">«include»</text></g><!--MD5=[df6f738caa8d1c40540899b786ee53bd]
+link ADConvert to ReadSignal--><g id="link_ADConvert_ReadSignal"><path d="M311.05,105 C356.31,105 412.33,105 454.12,105 " fill="none" id="ADConvert-to-ReadSignal" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#000000" points="459.14,105,450.14,101,454.14,105,450.14,109,459.14,105" style="stroke:#000000;stroke-width:1.0;"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="53" x="344.5" y="102.0591">«extend»</text></g><!--MD5=[a8ee88dcd3a3cd4d271c023b8cb1211c]
+link ReceiveSignal to SimPC--><g id="link_ReceiveSignal_SimPC"><path d="M600.18,182 C631.21,182 664.3,182 686.85,182 " fill="none" id="ReceiveSignal-SimPC" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[bce90197f32b54995dbe87b72ae3d7d5]
+@startuml Use Case Diagram
+  !define LIGHTORANGE
+  !include style.puml
+
+  skinparam actorStyle awesome
+  left to right direction
+
+  actor SimRacer as "Sim Racer"
+  actor SimPC as "Sim PC"
+
+  rectangle "Arduino Pedalbox" {
+    package Pedalbox {
+      usecase Brake as "Push brake pedal" <<Use Case>>
+      usecase ADConvert as "convert signal A/D" <<Use Case>>
+    }
+    package ArduinoBox {
+      usecase ReadSignal as "Read signal" <<Use Case>>
+      usecase ReceiveSignal as "Receive signal input" <<Use Case>>
+    }
+
+    SimRacer - - Brake
+    Brake ..> ReadSignal : <<include>>
+    ADConvert ..> ReadSignal : <<extend>>
+    ReceiveSignal - - SimPC
+  }
+@enduml
+
+@startuml Use Case Diagram
+
+
+
+
+
+
+
+
+
+
+skinparam stereotypeCBackgroundColor FF8800
+skinparam usecaseBackgroundColor<< Use Case >> FF8800
+
+skinparam backgroundColor fff
+
+
+
+
+
+
+
+
+skinparam circledCharacter {
+  radius 8
+  fontSize 11
+  fontName Verdana
+}
+
+skinparam class {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+
+  attributeFontColor 333
+  attributeFontSize 11
+  attributeIconSize 11
+}
+
+
+skinparam actor {
+    backgroundColor FF8800
+  borderColor BB6600
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam participant {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam collections {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam SequenceBox{
+    backgroundColor e0e0e0
+  borderColor cccccc
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam interface {
+    backgroundColor FF8800
+  borderColor BB6600
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam component {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam node {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam database {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam queue {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam usecase {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+skinparam activity {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+skinparam sequence {
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+
+  lifeLineBorderColor FF8800
+  lifeLineBackgroundColor e0e0e0
+}
+
+skinparam boundary {
+    backgroundColor FF8800
+  borderColor BB6600
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam control {
+    backgroundColor FF8800
+  borderColor BB6600
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam entity {
+    backgroundColor FF8800
+  borderColor BB6600
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam state {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+  startColor FF8800
+  endColor BB6600
+}
+
+
+skinparam object {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+
+skinparam note {
+    backgroundColor FF8800
+  borderColor BB6600
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam cloud {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+skinparam rectangle {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam storage {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+  skinparam actorStyle awesome
+  left to right direction
+
+  actor SimRacer as "Sim Racer"
+  actor SimPC as "Sim PC"
+
+  rectangle "Arduino Pedalbox" {
+    package Pedalbox {
+      usecase Brake as "Push brake pedal" <<Use Case>>
+      usecase ADConvert as "convert signal A/D" <<Use Case>>
+    }
+    package ArduinoBox {
+      usecase ReadSignal as "Read signal" <<Use Case>>
+      usecase ReceiveSignal as "Receive signal input" <<Use Case>>
+    }
+
+    SimRacer - - Brake
+    Brake ..> ReadSignal : <<include>>
+    ADConvert ..> ReadSignal : <<extend>>
+    ReceiveSignal - - SimPC
+  }
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

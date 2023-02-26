@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1220px" preserveAspectRatio="none" style="width:619px;height:1220px;background:#FFFFFF;" version="1.1" viewBox="0 0 619 1220" width="619px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="217.8496" style="stroke:#000000;stroke-width:1.5;" width="477.5" x="10" y="224.8262"/><rect fill="none" height="142.2935" style="stroke:#000000;stroke-width:1.5;" width="457.5" x="20" y="250.1777"/><rect fill="none" height="189.3823" style="stroke:#000000;stroke-width:1.5;" width="592" x="10" y="538.7817"/><rect fill="none" height="113.8262" style="stroke:#000000;stroke-width:1.5;" width="572" x="20" y="564.1333"/><rect fill="none" height="281.1367" style="stroke:#000000;stroke-width:1.5;" width="572" x="20" y="841.2529"/><line style="stroke:#FF8800;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="62" x2="62" y1="81.3687" y2="268.5293"/><line style="stroke:#FF8800;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="62" x2="62" y1="268.5293" y2="310.3652"/><line style="stroke:#FF8800;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="62" x2="62" y1="310.3652" y2="1025.8164"/><line style="stroke:#FF8800;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="62" x2="62" y1="1025.8164" y2="1067.6523"/><line style="stroke:#FF8800;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="62" x2="62" y1="1067.6523" y2="1139.3896"/><line style="stroke:#FF8800;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="187" x2="187" y1="81.3687" y2="268.5293"/><line style="stroke:#FF8800;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="187" x2="187" y1="268.5293" y2="310.3652"/><line style="stroke:#FF8800;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="187" x2="187" y1="310.3652" y2="1025.8164"/><line style="stroke:#FF8800;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="187" x2="187" y1="1025.8164" y2="1067.6523"/><line style="stroke:#FF8800;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="187" x2="187" y1="1067.6523" y2="1139.3896"/><line style="stroke:#FF8800;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="327" x2="327" y1="81.3687" y2="268.5293"/><line style="stroke:#FF8800;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="327" x2="327" y1="268.5293" y2="310.3652"/><line style="stroke:#FF8800;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="327" x2="327" y1="310.3652" y2="1025.8164"/><line style="stroke:#FF8800;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="327" x2="327" y1="1025.8164" y2="1067.6523"/><line style="stroke:#FF8800;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="327" x2="327" y1="1067.6523" y2="1139.3896"/><line style="stroke:#FF8800;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="427.5" x2="427.5" y1="81.3687" y2="268.5293"/><line style="stroke:#FF8800;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="427.5" x2="427.5" y1="268.5293" y2="310.3652"/><line style="stroke:#FF8800;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="427.5" x2="427.5" y1="310.3652" y2="1025.8164"/><line style="stroke:#FF8800;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="427.5" x2="427.5" y1="1025.8164" y2="1067.6523"/><line style="stroke:#FF8800;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="427.5" x2="427.5" y1="1067.6523" y2="1139.3896"/><line style="stroke:#FF8800;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="553" x2="553" y1="81.3687" y2="268.5293"/><line style="stroke:#FF8800;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="553" x2="553" y1="268.5293" y2="310.3652"/><line style="stroke:#FF8800;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="553" x2="553" y1="310.3652" y2="1025.8164"/><line style="stroke:#FF8800;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="553" x2="553" y1="1025.8164" y2="1067.6523"/><line style="stroke:#FF8800;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="553" x2="553" y1="1067.6523" y2="1139.3896"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="59" x="30" y="79.0591">Sim Racer</text><ellipse cx="62.5" cy="22.5" fill="#FF8800" rx="16" ry="16" style="stroke:#BB6600;stroke-width:1.5;"/><path d="M62.5,42.5 C66.5,42.5 69.5,42.5 73.5,38.5 C81.5,38.5 89.5,46.5 89.5,54.5 L89.5,58.5 C89.5,62.5 85.5,66.5 81.5,66.5 L43.5,66.5 C39.5,66.5 35.5,62.5 35.5,58.5 L35.5,54.5 C35.5,46.5 43.5,38.5 51.5,38.5 C55.5,42.5 58.5,42.5 62.5,42.5 " fill="#FF8800" style="stroke:#BB6600;stroke-width:1.5;"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="59" x="30" y="1149.4487">Sim Racer</text><ellipse cx="62.5" cy="1169.2583" fill="#FF8800" rx="16" ry="16" style="stroke:#BB6600;stroke-width:1.5;"/><path d="M62.5,1189.2583 C66.5,1189.2583 69.5,1189.2583 73.5,1185.2583 C81.5,1185.2583 89.5,1193.2583 89.5,1201.2583 L89.5,1205.2583 C89.5,1209.2583 85.5,1213.2583 81.5,1213.2583 L43.5,1213.2583 C39.5,1213.2583 35.5,1209.2583 35.5,1205.2583 L35.5,1201.2583 C35.5,1193.2583 43.5,1185.2583 51.5,1185.2583 C55.5,1189.2583 58.5,1189.2583 62.5,1189.2583 " fill="#FF8800" style="stroke:#BB6600;stroke-width:1.5;"/><rect fill="#CCCCCC" height="30" rx="2.5" ry="2.5" style="stroke:#AAAAAA;stroke-width:0.5;" width="73" x="151" y="50.3687"/><ellipse cx="166" cy="65.3687" fill="#ADD1B2" rx="8" ry="8" style="stroke:#AAAAAA;stroke-width:1.0;"/><path d="M166.6406,69.5249 Q165.75,69.5249 164.9922,69.2593 Q164.2344,68.9937 163.6875,68.478 Q163.1563,67.9624 162.8516,67.1812 Q162.5469,66.3999 162.5469,65.3843 Q162.5469,64.4312 162.8359,63.6577 Q163.125,62.8843 163.6719,62.3218 Q164.1875,61.7905 164.9609,61.5015 Q165.7344,61.2124 166.6406,61.2124 Q167.1406,61.2124 167.5469,61.2671 Q167.9531,61.3218 168.2969,61.4155 Q168.6563,61.5249 168.9531,61.6499 Q169.25,61.7749 169.4688,61.8843 L169.4688,63.8218 L169.2344,63.8218 Q169.0781,63.6968 168.8516,63.5171 Q168.625,63.3374 168.3281,63.1655 Q168.0313,62.9937 167.6875,62.8765 Q167.3438,62.7593 166.9531,62.7593 Q166.5156,62.7593 166.125,62.8921 Q165.7344,63.0249 165.4063,63.353 Q165.0938,63.6499 164.8984,64.1577 Q164.7031,64.6655 164.7031,65.3843 Q164.7031,66.1343 164.9141,66.6421 Q165.125,67.1499 165.4375,67.4312 Q165.7656,67.728 166.1719,67.853 Q166.5781,67.978 166.9688,67.978 Q167.3438,67.978 167.7109,67.8687 Q168.0781,67.7593 168.3906,67.5562 Q168.6563,67.4155 168.8828,67.2358 Q169.1094,67.0562 169.25,66.9312 L169.4688,66.9312 L169.4688,68.8374 Q169.1719,68.978 168.8984,69.0952 Q168.625,69.2124 168.3125,69.2905 Q167.9219,69.3999 167.5781,69.4624 Q167.2344,69.5249 166.6406,69.5249 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="37" x="180" y="68.4277">HX711</text><rect fill="#CCCCCC" height="30" rx="2.5" ry="2.5" style="stroke:#AAAAAA;stroke-width:0.5;" width="73" x="151" y="1138.3896"/><ellipse cx="166" cy="1153.3896" fill="#ADD1B2" rx="8" ry="8" style="stroke:#AAAAAA;stroke-width:1.0;"/><path d="M166.6406,1157.5459 Q165.75,1157.5459 164.9922,1157.2803 Q164.2344,1157.0146 163.6875,1156.499 Q163.1563,1155.9834 162.8516,1155.2021 Q162.5469,1154.4209 162.5469,1153.4053 Q162.5469,1152.4521 162.8359,1151.6787 Q163.125,1150.9053 163.6719,1150.3428 Q164.1875,1149.8115 164.9609,1149.5225 Q165.7344,1149.2334 166.6406,1149.2334 Q167.1406,1149.2334 167.5469,1149.2881 Q167.9531,1149.3428 168.2969,1149.4365 Q168.6563,1149.5459 168.9531,1149.6709 Q169.25,1149.7959 169.4688,1149.9053 L169.4688,1151.8428 L169.2344,1151.8428 Q169.0781,1151.7178 168.8516,1151.5381 Q168.625,1151.3584 168.3281,1151.1865 Q168.0313,1151.0146 167.6875,1150.8975 Q167.3438,1150.7803 166.9531,1150.7803 Q166.5156,1150.7803 166.125,1150.9131 Q165.7344,1151.0459 165.4063,1151.374 Q165.0938,1151.6709 164.8984,1152.1787 Q164.7031,1152.6865 164.7031,1153.4053 Q164.7031,1154.1553 164.9141,1154.6631 Q165.125,1155.1709 165.4375,1155.4521 Q165.7656,1155.749 166.1719,1155.874 Q166.5781,1155.999 166.9688,1155.999 Q167.3438,1155.999 167.7109,1155.8896 Q168.0781,1155.7803 168.3906,1155.5771 Q168.6563,1155.4365 168.8828,1155.2568 Q169.1094,1155.0771 169.25,1154.9521 L169.4688,1154.9521 L169.4688,1156.8584 Q169.1719,1156.999 168.8984,1157.1162 Q168.625,1157.2334 168.3125,1157.3115 Q167.9219,1157.4209 167.5781,1157.4834 Q167.2344,1157.5459 166.6406,1157.5459 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="37" x="180" y="1156.4487">HX711</text><rect fill="#CCCCCC" height="30" rx="2.5" ry="2.5" style="stroke:#AAAAAA;stroke-width:0.5;" width="71" x="292" y="50.3687"/><ellipse cx="307" cy="65.3687" fill="#ADD1B2" rx="8" ry="8" style="stroke:#AAAAAA;stroke-width:1.0;"/><path d="M307.6406,69.5249 Q306.75,69.5249 305.9922,69.2593 Q305.2344,68.9937 304.6875,68.478 Q304.1563,67.9624 303.8516,67.1812 Q303.5469,66.3999 303.5469,65.3843 Q303.5469,64.4312 303.8359,63.6577 Q304.125,62.8843 304.6719,62.3218 Q305.1875,61.7905 305.9609,61.5015 Q306.7344,61.2124 307.6406,61.2124 Q308.1406,61.2124 308.5469,61.2671 Q308.9531,61.3218 309.2969,61.4155 Q309.6563,61.5249 309.9531,61.6499 Q310.25,61.7749 310.4688,61.8843 L310.4688,63.8218 L310.2344,63.8218 Q310.0781,63.6968 309.8516,63.5171 Q309.625,63.3374 309.3281,63.1655 Q309.0313,62.9937 308.6875,62.8765 Q308.3438,62.7593 307.9531,62.7593 Q307.5156,62.7593 307.125,62.8921 Q306.7344,63.0249 306.4063,63.353 Q306.0938,63.6499 305.8984,64.1577 Q305.7031,64.6655 305.7031,65.3843 Q305.7031,66.1343 305.9141,66.6421 Q306.125,67.1499 306.4375,67.4312 Q306.7656,67.728 307.1719,67.853 Q307.5781,67.978 307.9688,67.978 Q308.3438,67.978 308.7109,67.8687 Q309.0781,67.7593 309.3906,67.5562 Q309.6563,67.4155 309.8828,67.2358 Q310.1094,67.0562 310.25,66.9312 L310.4688,66.9312 L310.4688,68.8374 Q310.1719,68.978 309.8984,69.0952 Q309.625,69.2124 309.3125,69.2905 Q308.9219,69.3999 308.5781,69.4624 Q308.2344,69.5249 307.6406,69.5249 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="35" x="321" y="68.4277">Signal</text><rect fill="#CCCCCC" height="30" rx="2.5" ry="2.5" style="stroke:#AAAAAA;stroke-width:0.5;" width="71" x="292" y="1138.3896"/><ellipse cx="307" cy="1153.3896" fill="#ADD1B2" rx="8" ry="8" style="stroke:#AAAAAA;stroke-width:1.0;"/><path d="M307.6406,1157.5459 Q306.75,1157.5459 305.9922,1157.2803 Q305.2344,1157.0146 304.6875,1156.499 Q304.1563,1155.9834 303.8516,1155.2021 Q303.5469,1154.4209 303.5469,1153.4053 Q303.5469,1152.4521 303.8359,1151.6787 Q304.125,1150.9053 304.6719,1150.3428 Q305.1875,1149.8115 305.9609,1149.5225 Q306.7344,1149.2334 307.6406,1149.2334 Q308.1406,1149.2334 308.5469,1149.2881 Q308.9531,1149.3428 309.2969,1149.4365 Q309.6563,1149.5459 309.9531,1149.6709 Q310.25,1149.7959 310.4688,1149.9053 L310.4688,1151.8428 L310.2344,1151.8428 Q310.0781,1151.7178 309.8516,1151.5381 Q309.625,1151.3584 309.3281,1151.1865 Q309.0313,1151.0146 308.6875,1150.8975 Q308.3438,1150.7803 307.9531,1150.7803 Q307.5156,1150.7803 307.125,1150.9131 Q306.7344,1151.0459 306.4063,1151.374 Q306.0938,1151.6709 305.8984,1152.1787 Q305.7031,1152.6865 305.7031,1153.4053 Q305.7031,1154.1553 305.9141,1154.6631 Q306.125,1155.1709 306.4375,1155.4521 Q306.7656,1155.749 307.1719,1155.874 Q307.5781,1155.999 307.9688,1155.999 Q308.3438,1155.999 308.7109,1155.8896 Q309.0781,1155.7803 309.3906,1155.5771 Q309.6563,1155.4365 309.8828,1155.2568 Q310.1094,1155.0771 310.25,1154.9521 L310.4688,1154.9521 L310.4688,1156.8584 Q310.1719,1156.999 309.8984,1157.1162 Q309.625,1157.2334 309.3125,1157.3115 Q308.9219,1157.4209 308.5781,1157.4834 Q308.2344,1157.5459 307.6406,1157.5459 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="35" x="321" y="1156.4487">Signal</text><rect fill="#CCCCCC" height="30" rx="2.5" ry="2.5" style="stroke:#AAAAAA;stroke-width:0.5;" width="80" x="387.5" y="50.3687"/><ellipse cx="402.5" cy="65.3687" fill="#7D67A3" rx="8" ry="8" style="stroke:#AAAAAA;stroke-width:1.0;"/><path d="M404.8438,69.3687 L400.1563,69.3687 L400.1563,67.9468 L401.4688,67.9468 L401.4688,62.7905 L400.1563,62.7905 L400.1563,61.3687 L404.8438,61.3687 L404.8438,62.7905 L403.5313,62.7905 L403.5313,67.9468 L404.8438,67.9468 L404.8438,69.3687 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="44" x="416.5" y="68.4277">Arduino</text><rect fill="#CCCCCC" height="30" rx="2.5" ry="2.5" style="stroke:#AAAAAA;stroke-width:0.5;" width="80" x="387.5" y="1138.3896"/><ellipse cx="402.5" cy="1153.3896" fill="#7D67A3" rx="8" ry="8" style="stroke:#AAAAAA;stroke-width:1.0;"/><path d="M404.8438,1157.3896 L400.1563,1157.3896 L400.1563,1155.9678 L401.4688,1155.9678 L401.4688,1150.8115 L400.1563,1150.8115 L400.1563,1149.3896 L404.8438,1149.3896 L404.8438,1150.8115 L403.5313,1150.8115 L403.5313,1155.9678 L404.8438,1155.9678 L404.8438,1157.3896 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="44" x="416.5" y="1156.4487">Arduino</text><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="42" x="529.5" y="79.0591">Sim PC</text><ellipse cx="553.5" cy="22.5" fill="#FF8800" rx="16" ry="16" style="stroke:#BB6600;stroke-width:1.5;"/><path d="M553.5,42.5 C557.5,42.5 560.5,42.5 564.5,38.5 C572.5,38.5 580.5,46.5 580.5,54.5 L580.5,58.5 C580.5,62.5 576.5,66.5 572.5,66.5 L534.5,66.5 C530.5,66.5 526.5,62.5 526.5,58.5 L526.5,54.5 C526.5,46.5 534.5,38.5 542.5,38.5 C546.5,42.5 549.5,42.5 553.5,42.5 " fill="#FF8800" style="stroke:#BB6600;stroke-width:1.5;"/><text fill="#000000" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="42" x="529.5" y="1149.4487">Sim PC</text><ellipse cx="553.5" cy="1169.2583" fill="#FF8800" rx="16" ry="16" style="stroke:#BB6600;stroke-width:1.5;"/><path d="M553.5,1189.2583 C557.5,1189.2583 560.5,1189.2583 564.5,1185.2583 C572.5,1185.2583 580.5,1193.2583 580.5,1201.2583 L580.5,1205.2583 C580.5,1209.2583 576.5,1213.2583 572.5,1213.2583 L534.5,1213.2583 C530.5,1213.2583 526.5,1209.2583 526.5,1205.2583 L526.5,1201.2583 C526.5,1193.2583 534.5,1185.2583 542.5,1185.2583 C546.5,1189.2583 549.5,1189.2583 553.5,1189.2583 " fill="#FF8800" style="stroke:#BB6600;stroke-width:1.5;"/><rect fill="#EEEEEE" height="3" style="stroke:#EEEEEE;stroke-width:1.0;" width="612" x="0" y="112.5444"/><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="612" y1="112.5444" y2="112.5444"/><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="612" y1="115.5444" y2="115.5444"/><rect fill="#EEEEEE" height="24.3516" style="stroke:#000000;stroke-width:2.0;" width="97" x="257.5" y="101.3687"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="79" x="263.5" y="118.8638">Initialization</text><polygon fill="#000000" points="338.5,151.0889,328.5,155.0889,338.5,159.0889,334.5,155.0889" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="332.5" x2="426.5" y1="155.0889" y2="155.0889"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="36" x="344.5" y="150.7793">create</text><polygon fill="#000000" points="198.5,178.4575,188.5,182.4575,198.5,186.4575,194.5,182.4575" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="192.5" x2="326.5" y1="182.4575" y2="182.4575"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="36" x="204.5" y="178.1479">create</text><polygon fill="#000000" points="198.5,205.8262,188.5,209.8262,198.5,213.8262,194.5,209.8262" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="192.5" x2="326.5" y1="209.8262" y2="209.8262"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="116" x="204.5" y="205.5166">start communication</text><path d="M10,224.8262 L71,224.8262 L71,233.1777 L61,243.1777 L10,243.1777 L10,224.8262 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="217.8496" style="stroke:#000000;stroke-width:1.5;" width="477.5" x="10" y="224.8262"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="16" x="25" y="239.3213">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="111" x="86" y="238.2451">[HX711 not available]</text><path d="M20,250.1777 L104,250.1777 L104,258.5293 L94,268.5293 L20,268.5293 L20,250.1777 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="142.2935" style="stroke:#000000;stroke-width:1.5;" width="457.5" x="20" y="250.1777"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="35" x="35" y="264.6729">while</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="79" x="119" y="263.5967">[no response]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="270" y="293.9482">timout 1 second</text><polygon fill="#000000" points="415.5,325.7339,425.5,329.7339,415.5,333.7339,419.5,329.7339" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="327.5" x2="421.5" y1="329.7339" y2="329.7339"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="76" x="334.5" y="325.4243">error request</text><polygon fill="#000000" points="73.5,353.1025,63.5,357.1025,73.5,361.1025,69.5,357.1025" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="67.5" x2="426.5" y1="357.1025" y2="357.1025"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="87" x="79.5" y="352.793">error indication</text><polygon fill="#000000" points="198.5,380.4712,188.5,384.4712,198.5,388.4712,194.5,384.4712" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="192.5" x2="326.5" y1="384.4712" y2="384.4712"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="116" x="204.5" y="380.1616">start communication</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="10" x2="487.5" y1="400.4712" y2="400.4712"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="90" x="15" y="411.8901">[HX711 available]</text><polygon fill="#000000" points="315.5,430.6758,325.5,434.6758,315.5,438.6758,319.5,434.6758" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="187.5" x2="321.5" y1="434.6758" y2="434.6758"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="14" x="194.5" y="430.3662">ok</text><polygon fill="#000000" points="415.5,465.0444,425.5,469.0444,415.5,473.0444,419.5,469.0444" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="327.5" x2="421.5" y1="469.0444" y2="469.0444"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="14" x="334.5" y="464.7349">ok</text><polygon fill="#000000" points="73.5,492.4131,63.5,496.4131,73.5,500.4131,69.5,496.4131" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="67.5" x2="426.5" y1="496.4131" y2="496.4131"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="165" x="79.5" y="492.1035">communication OK indication</text><polygon fill="#000000" points="541.5,519.7817,551.5,523.7817,541.5,527.7817,545.5,523.7817" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="427.5" x2="547.5" y1="523.7817" y2="523.7817"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="78" x="434.5" y="519.4722">Serial.begin()</text><path d="M10,538.7817 L71,538.7817 L71,547.1333 L61,557.1333 L10,557.1333 L10,538.7817 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="189.3823" style="stroke:#000000;stroke-width:1.5;" width="592" x="10" y="538.7817"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="16" x="25" y="553.2769">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="218" x="86" y="552.2007">[USB CDC serial connection is not open]</text><path d="M20,564.1333 L104,564.1333 L104,572.4849 L94,582.4849 L20,582.4849 L20,564.1333 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="113.8262" style="stroke:#000000;stroke-width:1.5;" width="572" x="20" y="564.1333"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="35" x="35" y="578.6284">while</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="57" x="119" y="577.5522">[not open]</text><polygon fill="#000000" points="438.5,597.8535,428.5,601.8535,438.5,605.8535,434.5,601.8535" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="432.5" x2="552.5" y1="601.8535" y2="601.8535"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="36" x="444.5" y="597.5439">not ok</text><polygon fill="#000000" points="73.5,625.2222,63.5,629.2222,73.5,633.2222,69.5,629.2222" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="67.5" x2="426.5" y1="629.2222" y2="629.2222"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="87" x="79.5" y="624.9126">error indication</text><polygon fill="#000000" points="541.5,665.9595,551.5,669.9595,541.5,673.9595,545.5,669.9595" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="427.5" x2="547.5" y1="669.9595" y2="669.9595"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="61" x="434.5" y="652.2813">start serial</text><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="86" x="434.5" y="665.6499">communication</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="10" x2="602" y1="685.9595" y2="685.9595"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="197" x="15" y="697.3784">[USB CDC serial connection is open]</text><polygon fill="#000000" points="438.5,716.1641,428.5,720.1641,438.5,724.1641,434.5,720.1641" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="432.5" x2="552.5" y1="720.1641" y2="720.1641"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="14" x="444.5" y="715.8545">ok</text><polygon fill="#000000" points="73.5,750.5327,63.5,754.5327,73.5,758.5327,69.5,754.5327" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="67.5" x2="426.5" y1="754.5327" y2="754.5327"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="165" x="79.5" y="750.2231">communication OK indication</text><rect fill="#EEEEEE" height="3" style="stroke:#EEEEEE;stroke-width:1.0;" width="612" x="0" y="783.7085"/><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="612" y1="783.7085" y2="783.7085"/><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="612" y1="786.7085" y2="786.7085"/><rect fill="#EEEEEE" height="24.3516" style="stroke:#000000;stroke-width:2.0;" width="67" x="272.5" y="772.5327"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="49" x="278.5" y="790.0278">Braking</text><polygon fill="#000000" points="198.5,822.2529,188.5,826.2529,198.5,830.2529,194.5,826.2529" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="192.5" x2="326.5" y1="826.2529" y2="826.2529"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="36" x="204.5" y="821.9434">read()</text><path d="M20,841.2529 L81,841.2529 L81,849.6045 L71,859.6045 L20,859.6045 L20,841.2529 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="281.1367" style="stroke:#000000;stroke-width:1.5;" width="572" x="20" y="841.2529"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="16" x="35" y="855.748">alt</text><polygon fill="#000000" points="73.5,874.9731,63.5,878.9731,73.5,882.9731,69.5,878.9731" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="67.5" x2="186.5" y1="878.9731" y2="878.9731"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="51" x="79.5" y="874.6636">get force</text><polygon fill="#000000" points="175.5,902.3418,185.5,906.3418,175.5,910.3418,179.5,906.3418" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="62.5" x2="181.5" y1="906.3418" y2="906.3418"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="101" x="69.5" y="902.0322">brake pedal force</text><polygon fill="#000000" points="315.5,929.7104,325.5,933.7104,315.5,937.7104,319.5,933.7104" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="187.5" x2="321.5" y1="933.7104" y2="933.7104"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="79" x="194.5" y="929.4009">measurement</text><text fill="#333333" font-family="Verdana" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="24" x="277.5" y="929.4009">long</text><polygon fill="#000000" points="415.5,957.0791,425.5,961.0791,415.5,965.0791,419.5,961.0791" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="327.5" x2="421.5" y1="961.0791" y2="961.0791"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="70" x="334.5" y="956.7695">brake signal</text><polygon fill="#000000" points="541.5,984.4478,551.5,988.4478,541.5,992.4478,545.5,988.4478" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="427.5" x2="547.5" y1="988.4478" y2="988.4478"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="102" x="434.5" y="984.1382">brake input signal</text><polygon fill="#000000" points="73.5,1011.8164,63.5,1015.8164,73.5,1019.8164,69.5,1015.8164" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="67.5" x2="552.5" y1="1015.8164" y2="1015.8164"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="76" x="79.5" y="1011.5068">decceleration</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="20" x2="592" y1="1024.8164" y2="1024.8164"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="82" x="267" y="1051.2354">timeout 1 second</text><polygon fill="#000000" points="415.5,1083.021,425.5,1087.021,415.5,1091.021,419.5,1087.021" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="327.5" x2="421.5" y1="1087.021" y2="1087.021"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="76" x="334.5" y="1082.7114">error request</text><polygon fill="#000000" points="73.5,1110.3896,63.5,1114.3896,73.5,1118.3896,69.5,1114.3896" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="67.5" x2="426.5" y1="1114.3896" y2="1114.3896"/><text fill="#333333" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="87" x="79.5" y="1110.0801">error indication</text><!--MD5=[b65e176779c5de84e6575fd9337846e6]
+@startuml Sequence Diagram
+  !define LIGHTORANGE
+  !include style.puml
+  skinparam actorStyle awesome
+  skinparam SequenceBoxBorderColor #Blue
+
+  actor SimRacer as "Sim Racer"
+
+  participant ConvertAD as "HX711" << (C,#ADD1B2) >>
+  participant Signal << (C,#ADD1B2) >>
+  participant Arduino as "Arduino" << (I,#7d67a3) >>
+  actor SimPC as "Sim PC"
+
+  'sequences
+  == Initialization ==
+  Arduino -> Signal : create
+  Signal -> ConvertAD : create
+  Signal -> ConvertAD : start communication
+  alt HX711 not available
+    group while [no response]
+      ...timout 1 second...
+      Signal -> Arduino : error request
+      Arduino -> SimRacer : error indication
+      Signal -> ConvertAD : start communication
+    end
+  else HX711 available
+      ConvertAD - -> Signal : ok
+  end
+  Signal - -> Arduino : ok
+  Arduino -> SimRacer : communication OK indication
+
+  Arduino -> SimPC : Serial.begin()
+  alt USB CDC serial connection is not open
+    group while [not open]
+      SimPC - -> Arduino : not ok
+      Arduino -> SimRacer : error indication
+      Arduino -> SimPC : start serial \ncommunication
+    end
+  else USB CDC serial connection is open
+      SimPC - -> Arduino : ok
+  end
+  Arduino -> SimRacer : communication OK indication
+
+  == Braking ==
+  Signal -> ConvertAD : read()
+  alt 
+    ConvertAD -> SimRacer : get force
+    SimRacer - -> ConvertAD : brake pedal force
+    ConvertAD - -> Signal : measurement //long//
+    Signal -> Arduino : brake signal
+    Arduino -> SimPC : brake input signal
+    SimPC - -> SimRacer : decceleration
+  else
+    ...timeout 1 second...
+    Signal -> Arduino : error request
+    Arduino -> SimRacer : error indication
+  end
+
+@enduml
+
+@startuml Sequence Diagram
+
+
+
+
+
+
+
+
+
+
+skinparam stereotypeCBackgroundColor FF8800
+skinparam usecaseBackgroundColor<< Use Case >> FF8800
+
+skinparam backgroundColor fff
+
+
+
+
+
+
+
+
+skinparam circledCharacter {
+  radius 8
+  fontSize 11
+  fontName Verdana
+}
+
+skinparam class {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+
+  attributeFontColor 333
+  attributeFontSize 11
+  attributeIconSize 11
+}
+
+
+skinparam actor {
+    backgroundColor FF8800
+  borderColor BB6600
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam participant {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam collections {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam SequenceBox{
+    backgroundColor e0e0e0
+  borderColor cccccc
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam interface {
+    backgroundColor FF8800
+  borderColor BB6600
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam component {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam node {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam database {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam queue {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam usecase {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+skinparam activity {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+skinparam sequence {
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+
+  lifeLineBorderColor FF8800
+  lifeLineBackgroundColor e0e0e0
+}
+
+skinparam boundary {
+    backgroundColor FF8800
+  borderColor BB6600
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam control {
+    backgroundColor FF8800
+  borderColor BB6600
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam entity {
+    backgroundColor FF8800
+  borderColor BB6600
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+
+skinparam state {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+  startColor FF8800
+  endColor BB6600
+}
+
+
+skinparam object {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+
+skinparam note {
+    backgroundColor FF8800
+  borderColor BB6600
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam cloud {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+    arrowColor 000
+  arrowFontName Verdana
+  arrowFontColor 333
+  arrowFontSize 11
+}
+
+skinparam rectangle {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+skinparam storage {
+    backgroundColor ccc
+  borderColor aaa
+    fontColor 000
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor 333
+  stereotypeFontSize 11
+}
+
+  skinparam actorStyle awesome
+  skinparam SequenceBoxBorderColor #Blue
+
+  actor SimRacer as "Sim Racer"
+
+  participant ConvertAD as "HX711" << (C,#ADD1B2) >>
+  participant Signal << (C,#ADD1B2) >>
+  participant Arduino as "Arduino" << (I,#7d67a3) >>
+  actor SimPC as "Sim PC"
+
+  == Initialization ==
+  Arduino -> Signal : create
+  Signal -> ConvertAD : create
+  Signal -> ConvertAD : start communication
+  alt HX711 not available
+    group while [no response]
+      ...timout 1 second...
+      Signal -> Arduino : error request
+      Arduino -> SimRacer : error indication
+      Signal -> ConvertAD : start communication
+    end
+  else HX711 available
+      ConvertAD - -> Signal : ok
+  end
+  Signal - -> Arduino : ok
+  Arduino -> SimRacer : communication OK indication
+
+  Arduino -> SimPC : Serial.begin()
+  alt USB CDC serial connection is not open
+    group while [not open]
+      SimPC - -> Arduino : not ok
+      Arduino -> SimRacer : error indication
+      Arduino -> SimPC : start serial \ncommunication
+    end
+  else USB CDC serial connection is open
+      SimPC - -> Arduino : ok
+  end
+  Arduino -> SimRacer : communication OK indication
+
+  == Braking ==
+  Signal -> ConvertAD : read()
+  alt 
+    ConvertAD -> SimRacer : get force
+    SimRacer - -> ConvertAD : brake pedal force
+    ConvertAD - -> Signal : measurement //long//
+    Signal -> Arduino : brake signal
+    Arduino -> SimPC : brake input signal
+    SimPC - -> SimRacer : decceleration
+  else
+    ...timeout 1 second...
+    Signal -> Arduino : error request
+    Arduino -> SimRacer : error indication
+  end
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>
