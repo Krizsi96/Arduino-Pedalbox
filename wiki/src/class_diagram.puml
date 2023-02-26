@@ -7,4 +7,34 @@
     -int read_raw_signal_value()
     +int get_raw_signal_value()
   }
+
+  class HX711 {
+    -byte PD_SCK
+    -byte DOUT
+    -byte GAIN
+    -long OFFSET
+    -float SCALE
+
+    +void begin()
+    +bool is_ready()
+    +void wait_ready()
+    +bool wait_ready_retry()
+    +bool wait_ready_timeout()
+    +void set_gain()
+    +long read()
+    +long read_average()
+    +double get_value()
+    +float get_units()
+    +void tare()
+    +void set_scale()
+    +float get_scale()
+    +void set_offset()
+    +long get_offset()
+    +void power_down()
+    +void power_up()
+  }
+
+  class Communication {
+    
+  }
 @enduml
