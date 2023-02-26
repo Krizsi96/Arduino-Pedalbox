@@ -3,9 +3,15 @@
   !include style.puml
 
   class Signal {
-    -int raw_signal_value
-    -int read_raw_signal_value()
-    +int get_raw_signal_value()
+    -int signal_value_
+    -char signal_type_
+
+    -int ReadSignalValue()
+    -bool InitHX711()
+    -long ReadHX711()
+    -void RequestError()
+    +int get_signal_value()
+    +bool InitSignal()
   }
 
   class HX711 {
@@ -56,4 +62,7 @@
     +write()
     +serialEvent()
   }
+
+  Arduino -- Signal
+  Signal ..> HX711
 @enduml
