@@ -1,5 +1,5 @@
 @startuml Use Case Diagram
-  !define DARKORANGE
+  !define LIGHTORANGE
   !include style.puml
 
   skinparam actorStyle awesome

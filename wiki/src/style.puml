@@ -66,6 +66,7 @@ skinparam usecaseBackgroundColor<< Use Case >> $ACCENT
 !$ACCENT = "FF8800"
 !$ACCENTDARK = "BB6600"
 skinparam stereotypeCBackgroundColor $ACCENT
+skinparam usecaseBackgroundColor<< Use Case >> $ACCENT
 !define LIGHTSTYLE
 !endif
 
