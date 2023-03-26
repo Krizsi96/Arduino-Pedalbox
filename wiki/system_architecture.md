@@ -1,15 +1,15 @@
 # Arduino Pedalbox
 
-![Alt text](src/jpg/System%20Behavior!Arduino%20Pedalbox%20Use%20Cases_5.jpg)
+![use case diagram](src/diagrams/Arduino%20Pedalbox%20Use%20Cases_diagram.jpeg)
 
 ## System Architecture
 
-![Alt text](src/jpg/System%20Structure!Arduino%20Pedalbox%20%5B%20System%20Interfaces%20%5D_4.jpg)
+![system interfaces](src/diagrams/Arduino%20Pedalbox%20%5B%20System%20Interfaces%20%5D_diagram.jpeg)
 
-![Alt text](src/jpg/System%20Structure!Arduino%20Pedalbox%20%5B%20System%20Components%20%5D_0.jpg)
+![system components](src/diagrams/Arduino%20Pedalbox%20%5B%20System%20Components%20%5D_diagram.jpeg)
 
-![Alt text](src/jpg/System%20Structure!Arduino%20Pedalbox!Arduino%20Pedalbox%20%5B%20Subsystems%20Communication%20%5D_3.jpg)
+![subsystem communication](src/diagrams/Arduino%20Pedalbox%20%5B%20Subsystems%20Communication%20%5D_diagram.jpeg)
 
-![Alt text](src/jpg/System%20Structure!Arduino%20Pedalbox!ArduinoBox!ArduinoBox%20%5B%20Signal%20Flow%20%5D_1.jpg)
+![signal flow](src/diagrams/ArduinoBox%20%5B%20Signal%20Flow%20%5D_diagram.jpeg)
 
-![Alt text](src/jpg/System%20Structure!Arduino%20Pedalbox!PedalBox!LoadCellPedal!Load%20Cell%20Pedal%20%5B%20Signal%20Flow%20%5D_2.jpg)
+![signal flow](src/diagrams/Load%20Cell%20Pedal%20%5B%20Signal%20Flow%20%5D_diagram.jpeg)
