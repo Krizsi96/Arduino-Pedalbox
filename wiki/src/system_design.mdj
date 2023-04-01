@@ -703,13 +703,30 @@
 											"height": 13,
 											"text": "class: Pedalbox",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "SysMLPartCompartmentItemView",
+											"_id": "AAAAAAGHPesG4rBS6a4=",
+											"_parent": {
+												"$ref": "AAAAAAGGrJ+gCz3CFfE="
+											},
+											"model": {
+												"$ref": "AAAAAAGHPesG1rBPvgU="
+											},
+											"font": "Arial;13;0",
+											"left": 48,
+											"top": 359.4,
+											"width": 162.220703125,
+											"height": 13,
+											"text": "class: Serial",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 43,
 									"top": 279,
 									"width": 172.220703125,
-									"height": 83.4
+									"height": 98.4
 								},
 								{
 									"_type": "SysMLPortCompartmentView",
@@ -850,7 +867,7 @@
 							"left": 43,
 							"top": 241,
 							"width": 172.220703125,
-							"height": 121.39999999999998,
+							"height": 136.39999999999998,
 							"showVisibility": false,
 							"nameCompartment": {
 								"$ref": "AAAAAAGGrJ+gCj24mkA="
@@ -5423,6 +5440,18 @@
 									"name": "class",
 									"type": {
 										"$ref": "AAAAAAGHHkd+kqIfcTo="
+									},
+									"aggregation": "composite"
+								},
+								{
+									"_type": "SysMLProperty",
+									"_id": "AAAAAAGHPesG1rBPvgU=",
+									"_parent": {
+										"$ref": "AAAAAAGGrJ+gCj21TZ4="
+									},
+									"name": "class",
+									"type": {
+										"$ref": "AAAAAAGHPcHM6ae4rhU="
 									},
 									"aggregation": "composite"
 								}
