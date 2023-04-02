@@ -36,9 +36,9 @@
 										"$ref": "AAAAAAGGrJ7/Bz1HJuE="
 									},
 									"font": "Arial;13;0",
-									"left": 46.68994140625,
+									"left": 44.5,
 									"top": 19,
-									"width": 242.3505859375,
+									"width": 221.62548828125,
 									"height": 13,
 									"text": "Arduino Pedalbox [ System Components ]"
 								},
@@ -51,7 +51,7 @@
 									"font": "Arial;13;1",
 									"left": 19,
 									"top": 19,
-									"width": 22.68994140625,
+									"width": 20.5,
 									"height": 13,
 									"text": "bdd"
 								}
@@ -3143,9 +3143,9 @@
 														"$ref": "AAAAAAGGrmAXW4vZ2go="
 													},
 													"font": "Arial;13;0",
-													"left": 179.34814453125,
+													"left": 178.61181640625,
 													"top": 38,
-													"width": 153.46435546875,
+													"width": 147.61181640625,
 													"height": 13,
 													"text": "ArduinoBox [ Signal Flow ]"
 												},
@@ -3158,7 +3158,7 @@
 													"font": "Arial;13;1",
 													"left": 156,
 													"top": 38,
-													"width": 18.34814453125,
+													"width": 17.61181640625,
 													"height": 13,
 													"text": "ibd"
 												}
@@ -3473,7 +3473,7 @@
 															"font": "Arial;13;1",
 															"left": 314,
 															"top": 284,
-															"width": 79.50439453125,
+															"width": 71.86181640625,
 															"height": 13,
 															"text": "class: HX711"
 														},
@@ -3508,7 +3508,7 @@
 													"font": "Arial;13;0",
 													"left": 309,
 													"top": 277,
-													"width": 89.50439453125,
+													"width": 81.86181640625,
 													"height": 25,
 													"stereotypeLabel": {
 														"$ref": "AAAAAAGGrmjS0oy81gc="
@@ -3527,7 +3527,7 @@
 											"font": "Arial;13;0",
 											"left": 299,
 											"top": 267,
-											"width": 109.50439453125,
+											"width": 101.86181640625,
 											"height": 45,
 											"autoResize": true,
 											"showVisibility": false,
@@ -5698,9 +5698,9 @@
 																"$ref": "AAAAAAGGrk9+jUanW80="
 															},
 															"font": "Arial;13;0",
-															"left": 123.34814453125,
+															"left": 122.61181640625,
 															"top": 16,
-															"width": 178.04248046875,
+															"width": 166.369140625,
 															"height": 13,
 															"text": "Load Cell Pedal [ Signal Flow ]"
 														},
@@ -5713,7 +5713,7 @@
 															"font": "Arial;13;1",
 															"left": 100,
 															"top": 16,
-															"width": 18.34814453125,
+															"width": 17.61181640625,
 															"height": 13,
 															"text": "ibd"
 														}
@@ -5759,9 +5759,9 @@
 															},
 															"font": "Arial;13;0",
 															"left": 798.945068359375,
-															"top": 102,
+															"top": 108.5,
 															"width": 122.10986328125,
-															"height": 26,
+															"height": 13,
 															"alpha": -2.725153965256835,
 															"distance": 56.859475903318,
 															"text": "serial interface: RJ45",
@@ -7687,9 +7687,9 @@
 												"$ref": "AAAAAAGGrMnC+LcgYhw="
 											},
 											"font": "Arial;13;0",
-											"left": 79.34814453125,
+											"left": 78.61181640625,
 											"top": 14,
-											"width": 286.416015625,
+											"width": 262.7900390625,
 											"height": 13,
 											"text": "Arduino Pedalbox [ Subsystems Communication ]"
 										},
@@ -7702,7 +7702,7 @@
 											"font": "Arial;13;1",
 											"left": 56,
 											"top": 14,
-											"width": 18.34814453125,
+											"width": 17.61181640625,
 											"height": 13,
 											"text": "ibd"
 										}
@@ -8052,9 +8052,9 @@
 											},
 											"font": "Arial;13;0",
 											"left": 159.647705078125,
-											"top": 208,
+											"top": 214.5,
 											"width": 122.10986328125,
-											"height": 26,
+											"height": 13,
 											"alpha": -3.091634249555297,
 											"distance": 60.07495318350236,
 											"text": "serial interface: RJ45",
@@ -8134,9 +8134,9 @@
 											},
 											"font": "Arial;13;0",
 											"left": 449.9266357421875,
-											"top": 202,
+											"top": 208.5,
 											"width": 116.146728515625,
-											"height": 26,
+											"height": 13,
 											"alpha": 0.03702010902461622,
 											"distance": 54.037024344425184,
 											"text": "serial interface: RJ45",
@@ -9886,9 +9886,9 @@
 										"$ref": "AAAAAAGGrL39vKqFh1E="
 									},
 									"font": "Arial;13;0",
-									"left": 49.68994140625,
+									"left": 47.5,
 									"top": 19,
-									"width": 225.72607421875,
+									"width": 207.14013671875,
 									"height": 13,
 									"text": "Arduino Pedalbox [ System Interfaces ]"
 								},
@@ -9901,7 +9901,7 @@
 									"font": "Arial;13;1",
 									"left": 22,
 									"top": 19,
-									"width": 22.68994140625,
+									"width": 20.5,
 									"height": 13,
 									"text": "bdd"
 								}
@@ -22111,118 +22111,6 @@
 												},
 												{
 													"_type": "UMLSeqMessageView",
-													"_id": "AAAAAAGHPdEeEKsSSJw=",
-													"_parent": {
-														"$ref": "AAAAAAGHHkqzy6JkGPg="
-													},
-													"model": {
-														"$ref": "AAAAAAGHPdEeEKsR0fg="
-													},
-													"subViews": [
-														{
-															"_type": "EdgeLabelView",
-															"_id": "AAAAAAGHPdEeEKsToV8=",
-															"_parent": {
-																"$ref": "AAAAAAGHPdEeEKsSSJw="
-															},
-															"model": {
-																"$ref": "AAAAAAGHPdEeEKsR0fg="
-															},
-															"font": "Arial;13;0",
-															"left": 211,
-															"top": 194,
-															"width": 221.787109375,
-															"height": 13,
-															"alpha": -0.3805065495262321,
-															"distance": 21.540659228538015,
-															"hostEdge": {
-																"$ref": "AAAAAAGHPdEeEKsSSJw="
-															},
-															"edgePosition": 1,
-															"text": "5 : turn on led(SERIAL COM NOT OK)"
-														},
-														{
-															"_type": "EdgeLabelView",
-															"_id": "AAAAAAGHPdEeEKsUJ60=",
-															"_parent": {
-																"$ref": "AAAAAAGHPdEeEKsSSJw="
-															},
-															"model": {
-																"$ref": "AAAAAAGHPdEeEKsR0fg="
-															},
-															"visible": false,
-															"font": "Arial;13;0",
-															"left": 340,
-															"top": 228,
-															"height": 13,
-															"alpha": 1.5707963267948966,
-															"distance": 25,
-															"hostEdge": {
-																"$ref": "AAAAAAGHPdEeEKsSSJw="
-															},
-															"edgePosition": 1
-														},
-														{
-															"_type": "EdgeLabelView",
-															"_id": "AAAAAAGHPdEeEKsVOrA=",
-															"_parent": {
-																"$ref": "AAAAAAGHPdEeEKsSSJw="
-															},
-															"model": {
-																"$ref": "AAAAAAGHPdEeEKsR0fg="
-															},
-															"visible": false,
-															"font": "Arial;13;0",
-															"left": 341,
-															"top": 193,
-															"height": 13,
-															"alpha": -1.5707963267948966,
-															"distance": 10,
-															"hostEdge": {
-																"$ref": "AAAAAAGHPdEeEKsSSJw="
-															},
-															"edgePosition": 1
-														},
-														{
-															"_type": "UMLActivationView",
-															"_id": "AAAAAAGHPdEeEKsWSQc=",
-															"_parent": {
-																"$ref": "AAAAAAGHPdEeEKsSSJw="
-															},
-															"model": {
-																"$ref": "AAAAAAGHPdEeEKsR0fg="
-															},
-															"visible": false,
-															"font": "Arial;13;0",
-															"left": 114,
-															"top": 209,
-															"width": 14,
-															"height": 29
-														}
-													],
-													"font": "Arial;13;0",
-													"head": {
-														"$ref": "AAAAAAGHHkrZeaKveHM="
-													},
-													"tail": {
-														"$ref": "AAAAAAGHHks23qLtjTc="
-													},
-													"points": "568:209;114:209",
-													"nameLabel": {
-														"$ref": "AAAAAAGHPdEeEKsToV8="
-													},
-													"stereotypeLabel": {
-														"$ref": "AAAAAAGHPdEeEKsUJ60="
-													},
-													"propertyLabel": {
-														"$ref": "AAAAAAGHPdEeEKsVOrA="
-													},
-													"activation": {
-														"$ref": "AAAAAAGHPdEeEKsWSQc="
-													}
-												},
-												{
-													"_type": "UMLSeqMessageView",
 													"_id": "AAAAAAGHPdJ016tPl8E=",
 													"_parent": {
 														"$ref": "AAAAAAGHHkqzy6JkGPg="
@@ -22242,7 +22130,7 @@
 															},
 															"font": "Arial;13;0",
 															"left": 631,
-															"top": 223,
+															"top": 194,
 															"width": 87.4326171875,
 															"height": 13,
 															"alpha": 1.5707963267948966,
@@ -22251,7 +22139,7 @@
 																"$ref": "AAAAAAGHPdJ016tPl8E="
 															},
 															"edgePosition": 1,
-															"text": "6 : Serial ready"
+															"text": "5 : Serial ready"
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -22265,7 +22153,7 @@
 															"visible": false,
 															"font": "Arial;13;0",
 															"left": 674,
-															"top": 208,
+															"top": 179,
 															"height": 13,
 															"alpha": 1.5707963267948966,
 															"distance": 25,
@@ -22286,7 +22174,7 @@
 															"visible": false,
 															"font": "Arial;13;0",
 															"left": 674,
-															"top": 243,
+															"top": 214,
 															"height": 13,
 															"alpha": -1.5707963267948966,
 															"distance": 10,
@@ -22306,7 +22194,7 @@
 															},
 															"font": "Arial;13;0",
 															"left": 767,
-															"top": 239,
+															"top": 210,
 															"width": 14,
 															"height": 101
 														}
@@ -22318,7 +22206,7 @@
 													"tail": {
 														"$ref": "AAAAAAGHHks23qLtjTc="
 													},
-													"points": "581:239;767:239",
+													"points": "581:210;767:210",
 													"nameLabel": {
 														"$ref": "AAAAAAGHPdJ016tQLV0="
 													},
@@ -22352,9 +22240,9 @@
 																"$ref": "AAAAAAGHPdNCa6tnVUg="
 															},
 															"font": "Arial;13;0",
-															"left": 657,
-															"top": 315,
-															"width": 31.79541015625,
+															"left": 629,
+															"top": 289,
+															"width": 87.42626953125,
 															"height": 13,
 															"alpha": -1.3734017284836622,
 															"distance": 10.198039027185569,
@@ -22362,7 +22250,7 @@
 																"$ref": "AAAAAAGHPdNCa6toFQI="
 															},
 															"edgePosition": 1,
-															"text": "7 : ok"
+															"text": "6 : serial status"
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -22376,7 +22264,7 @@
 															"visible": false,
 															"font": "Arial;13;0",
 															"left": 673,
-															"top": 351,
+															"top": 325,
 															"height": 13,
 															"alpha": 1.5707963267948966,
 															"distance": 25,
@@ -22397,7 +22285,7 @@
 															"visible": false,
 															"font": "Arial;13;0",
 															"left": 674,
-															"top": 316,
+															"top": 290,
 															"height": 13,
 															"alpha": -1.5707963267948966,
 															"distance": 10,
@@ -22418,7 +22306,7 @@
 															"visible": false,
 															"font": "Arial;13;0",
 															"left": 568,
-															"top": 332,
+															"top": 306,
 															"width": 14,
 															"height": 25
 														}
@@ -22430,7 +22318,7 @@
 													"tail": {
 														"$ref": "AAAAAAGHPcqNqKm3RBE="
 													},
-													"points": "767:332;581:332",
+													"points": "767:306;581:306",
 													"nameLabel": {
 														"$ref": "AAAAAAGHPdNCa6tp/gw="
 													},
@@ -22464,9 +22352,9 @@
 																"$ref": "AAAAAAGHPdORtKuBUa4="
 															},
 															"font": "Arial;13;0",
-															"left": 241,
+															"left": 226,
 															"top": 325,
-															"width": 190.734375,
+															"width": 221.3046875,
 															"height": 13,
 															"alpha": -1.2036231630799428,
 															"distance": 13.92838827718412,
@@ -22474,7 +22362,7 @@
 																"$ref": "AAAAAAGHPdORtKuCTiA="
 															},
 															"edgePosition": 1,
-															"text": "8 : turn on led(SERIAL COM OK)"
+															"text": "7 : turn on led(SERIAL COM STATUS)"
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -22622,22 +22510,6 @@
 										},
 										{
 											"_type": "UMLMessage",
-											"_id": "AAAAAAGHPdEeEKsR0fg=",
-											"_parent": {
-												"$ref": "AAAAAAGHHkqzy6JjJTQ="
-											},
-											"name": "turn on led",
-											"source": {
-												"$ref": "AAAAAAGHHks23aLmPTE="
-											},
-											"target": {
-												"$ref": "AAAAAAGHHkrZeaKol6g="
-											},
-											"messageSort": "asynchSignal",
-											"arguments": "SERIAL COM NOT OK"
-										},
-										{
-											"_type": "UMLMessage",
 											"_id": "AAAAAAGHPdJ016tOynI=",
 											"_parent": {
 												"$ref": "AAAAAAGHHkqzy6JjJTQ="
@@ -22656,7 +22528,7 @@
 											"_parent": {
 												"$ref": "AAAAAAGHHkqzy6JjJTQ="
 											},
-											"name": "ok",
+											"name": "serial status",
 											"source": {
 												"$ref": "AAAAAAGHPcqNp6mwcqU="
 											},
@@ -22679,7 +22551,7 @@
 												"$ref": "AAAAAAGHHkrZeaKol6g="
 											},
 											"messageSort": "asynchSignal",
-											"arguments": "SERIAL COM OK"
+											"arguments": "SERIAL COM STATUS"
 										}
 									],
 									"participants": [
@@ -22889,9 +22761,9 @@
 																"$ref": "AAAAAAGHHmLMMqnJIfg="
 															},
 															"font": "Arial;13;0",
-															"left": 29.72998046875,
+															"left": 27.55908203125,
 															"top": 15,
-															"width": 101.46435546875,
+															"width": 90.53369140625,
 															"height": 13,
 															"text": "Pedal Input Read"
 														},
@@ -22904,7 +22776,7 @@
 															"font": "Arial;13;1",
 															"left": 10,
 															"top": 15,
-															"width": 14.72998046875,
+															"width": 12.55908203125,
 															"height": 13,
 															"text": "sd"
 														}
@@ -27941,7 +27813,8 @@
 											"_parent": {
 												"$ref": "AAAAAAGHPcH4u6fiI7k="
 											},
-											"name": "Serial"
+											"name": "Serial",
+											"type": ""
 										}
 									]
 								},
