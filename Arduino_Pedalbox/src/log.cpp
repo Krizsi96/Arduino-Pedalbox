@@ -40,10 +40,12 @@ void Log::digitalClockDisplay() {
 }
 
 void Log::updateTime() {
-  counter = millis();
+  if (counter % 1000 == 0) {  // every second
+    time = time + 1;
+  }
   setTime(time);
 
-  if (counter % 100 == 0) {
+  if (counter % 10 == 0) {
     Serial.print("\n");
     Serial.print("counter: ");
     Serial.print(counter);
@@ -56,7 +58,5 @@ void Log::updateTime() {
     digitalClockDisplay();
   }
 
-  if (counter % 1000 == 0) {
-    time = time + 1;
-  }
+  counter = millis();
 }
