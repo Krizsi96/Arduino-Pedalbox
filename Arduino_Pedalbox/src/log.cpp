@@ -1,11 +1,7 @@
 #include "log.h"
 
 Log::Log()
-    : start_time(1357041600),
-      counter(0),
-      counter_previous(0),
-      millisecond(0),
-      time(start_time) {
+    : start_time(1357041600), counter(0), millisecond(0), time(start_time) {
   setTime(start_time);
 }
 
@@ -17,8 +13,8 @@ void Log::printDigits(int digits) {
   Serial.print(digits);
 }
 
-void Log::digitalClockDisplay() {
-  if (counter % 10 == 0) {  // every 10 milliseconds
+void Log::digitalClockDisplay(uint8_t const refresh_period) {
+  if (counter % refresh_period == 0) {  // in milliseconds
     // display counter
     Serial.print("\n");
     Serial.print("counter: ");

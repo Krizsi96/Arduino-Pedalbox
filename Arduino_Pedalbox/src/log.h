@@ -7,7 +7,7 @@
 class Log {
  public:
   Log();
-  void digitalClockDisplay();
+  void digitalClockDisplay(uint8_t refresh_period);
   void updateTime();
 
   enum kLogType { kInfo, kWarning, kError, kDebug };
@@ -16,7 +16,6 @@ class Log {
  private:
   uint32_t const start_time;
   uint32_t time;
-  uint32_t counter_previous;
   uint32_t counter;
   uint32_t millisecond;
 

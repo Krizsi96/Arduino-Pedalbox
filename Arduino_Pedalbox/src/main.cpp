@@ -12,5 +12,5 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   logging.updateTime();
-  logging.digitalClockDisplay();
+  logging.digitalClockDisplay(10);
 }
