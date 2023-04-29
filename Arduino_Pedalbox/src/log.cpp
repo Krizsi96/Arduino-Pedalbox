@@ -18,25 +18,32 @@ void Log::printDigits(int digits) {
 }
 
 void Log::digitalClockDisplay() {
-  // digital clock display of the time
+  if (counter % 10 == 0) {  // every 10 milliseconds
+    // display counter
+    Serial.print("\n");
+    Serial.print("counter: ");
+    Serial.print(counter);
+    Serial.print(" milliseconds\n");
 
-  Serial.print(hour());
-  printDigits(minute());
-  printDigits(second());
-  Serial.print(".");
-  if (millisecond < 10) {
-    Serial.print("00");
-  } else if ((10 <= millisecond) && (millisecond < 100)) {
-    Serial.print("0");
+    // digital clock display of the time
+    Serial.print(hour());
+    printDigits(minute());
+    printDigits(second());
+    Serial.print(".");
+    if (millisecond < 10) {
+      Serial.print("00");
+    } else if ((10 <= millisecond) && (millisecond < 100)) {
+      Serial.print("0");
+    }
+    Serial.print(millisecond);
+    Serial.print(" ");
+    Serial.print(day());
+    Serial.print(" ");
+    Serial.print(month());
+    Serial.print(" ");
+    Serial.print(year());
+    Serial.println();
   }
-  Serial.print(millisecond);
-  Serial.print(" ");
-  Serial.print(day());
-  Serial.print(" ");
-  Serial.print(month());
-  Serial.print(" ");
-  Serial.print(year());
-  Serial.println();
 }
 
 void Log::updateTime() {
@@ -44,19 +51,7 @@ void Log::updateTime() {
     time = time + 1;
   }
   setTime(time);
-
-  if (counter % 10 == 0) {
-    Serial.print("\n");
-    Serial.print("counter: ");
-    Serial.print(counter);
-    Serial.print(" milliseconds\n");
-
-    uint32_t temp = counter / 1000;
-    millisecond = (counter - (temp * 1000));
-
-    // digital clock display of the time
-    digitalClockDisplay();
-  }
-
+  uint32_t seconds = (counter / 1000) * 1000;
+  millisecond = (counter - seconds);
   counter = millis();
 }
