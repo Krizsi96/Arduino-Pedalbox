@@ -16,7 +16,8 @@ class Log {
  private:
   uint32_t const start_time;
   uint32_t time;
-  uint32_t previous_millisecond;
+  uint32_t counter_previous;
+  uint32_t counter;
   uint32_t millisecond;
 
   void printDigits(int digits);

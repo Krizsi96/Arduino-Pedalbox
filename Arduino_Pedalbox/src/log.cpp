@@ -2,7 +2,8 @@
 
 Log::Log()
     : start_time(1357041600),
-      previous_millisecond(0),
+      counter(0),
+      counter_previous(0),
       millisecond(0),
       time(start_time) {
   setTime(start_time);
@@ -33,26 +34,20 @@ void Log::digitalClockDisplay() {
 }
 
 void Log::updateTime() {
-  millisecond = millis();
+  counter = millis();
   setTime(time);
 
-  if (millisecond % 100 == 0) {
+  if (counter % 100 == 0) {
     Serial.print("\n");
-    Serial.print("time: ");
-    Serial.print(millisecond);
+    Serial.print("counter: ");
+    Serial.print(counter);
     Serial.print(" milliseconds\n");
 
     // digital clock display of the time
     digitalClockDisplay();
-
-    Serial.print("prev_millisecond: ");
-    Serial.print(previous_millisecond);
-    Serial.print(" milliseconds\n");
   }
 
-  uint32_t elapsed_milliseconds = millisecond - previous_millisecond;
-  if (elapsed_milliseconds % 1000 == 0) {
+  if (counter % 1000 == 0) {
     time = time + 1;
-    previous_millisecond = millisecond;
   }
 }
