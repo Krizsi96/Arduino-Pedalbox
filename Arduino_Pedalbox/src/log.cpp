@@ -1,7 +1,7 @@
 #include "log.h"
 
 Log::Log()
-    : start_time(1357041600), counter(0), millisecond(0), time(start_time) {
+    : start_time(1356998400), counter(0), millisecond(0), time(start_time) {
   setTime(start_time);
 }
 
