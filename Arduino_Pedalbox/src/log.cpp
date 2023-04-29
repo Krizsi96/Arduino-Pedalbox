@@ -24,6 +24,12 @@ void Log::digitalClockDisplay() {
   printDigits(minute());
   printDigits(second());
   Serial.print(".");
+  if (millisecond < 10) {
+    Serial.print("00");
+  } else if ((10 <= millisecond) && (millisecond < 100)) {
+    Serial.print("0");
+  }
+  Serial.print(millisecond);
   Serial.print(" ");
   Serial.print(day());
   Serial.print(" ");
@@ -42,6 +48,9 @@ void Log::updateTime() {
     Serial.print("counter: ");
     Serial.print(counter);
     Serial.print(" milliseconds\n");
+
+    uint32_t temp = counter / 1000;
+    millisecond = (counter - (temp * 1000));
 
     // digital clock display of the time
     digitalClockDisplay();
