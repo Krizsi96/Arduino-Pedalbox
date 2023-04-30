@@ -20,6 +20,7 @@ class Log {
   uint32_t time;
   uint32_t counter;
   uint32_t millisecond;
+  bool time_updated;
 
   void printDigits(int digits);
 };
