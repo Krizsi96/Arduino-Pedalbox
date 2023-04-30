@@ -13,8 +13,7 @@ void Log::printDigits(int digits) {
   Serial.print(digits);
 }
 
-void Log::digitalClockDisplay(uint8_t const refresh_period) {
-  if (counter % refresh_period == 0) {  // in milliseconds
+void Log::digitalClockDisplay() {
     // display counter
     Serial.print("\n");
     Serial.print("counter: ");
@@ -39,7 +38,6 @@ void Log::digitalClockDisplay(uint8_t const refresh_period) {
     Serial.print(" ");
     Serial.print(year());
     Serial.println();
-  }
 }
 
 void Log::updateTime() {

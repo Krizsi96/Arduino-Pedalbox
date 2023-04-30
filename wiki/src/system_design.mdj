@@ -21464,7 +21464,7 @@
 													"top": 503,
 													"width": 494.62841796875,
 													"height": 13,
-													"text": "+digitalClockDisplay(refresh_period: uint8_t): void",
+													"text": "+digitalClockDisplay(): void",
 													"horizontalAlignment": 0
 												},
 												{
@@ -26291,15 +26291,6 @@
 											},
 											"type": "void",
 											"direction": "return"
-										},
-										{
-											"_type": "UMLParameter",
-											"_id": "AAAAAAGHzmNnGpko8Q0=",
-											"_parent": {
-												"$ref": "AAAAAAGHzGJS6MCzUsY="
-											},
-											"name": "refresh_period",
-											"type": "uint8_t"
 										}
 									]
 								},
