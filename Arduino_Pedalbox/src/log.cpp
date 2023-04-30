@@ -37,12 +37,11 @@ void Log::digitalClockDisplay() {
     Serial.print(month());
     Serial.print(" ");
     Serial.print(year());
-    Serial.println();
 }
 
 void Log::updateTime() {
   if (counter % 1000 == 0) {  // every second
-    time = time + 1;
+    time++;
   }
   setTime(time);
   uint32_t seconds = (counter / 1000) * 1000;
@@ -53,6 +52,9 @@ void Log::updateTime() {
 void Log::createLog(kLogType log_type, const char *file, int line,
                     const char *message) {
   char log_type_str[10];
+
+  digitalClockDisplay();
+  Serial.print(" ");
   switch (log_type) {
     case kInfo:
       strcpy(log_type_str, "INFO");
@@ -77,5 +79,7 @@ void Log::createLog(kLogType log_type, const char *file, int line,
   Serial.print(line);
   Serial.print(": ");
   Serial.print(message);
+  Serial.print(" ");
+  Serial.print(time);
   Serial.print("\n");
 }
