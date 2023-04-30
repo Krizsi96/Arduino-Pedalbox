@@ -6,11 +6,13 @@
 
 class Log {
  public:
+  enum kLogType { kInfo, kWarning, kError, kDebug };
+
   Log();
   void digitalClockDisplay(uint8_t refresh_period);
   void updateTime();
-
-  enum kLogType { kInfo, kWarning, kError, kDebug };
+  void createLog(kLogType log_type, const char* file, int line,
+                 const char* message);
 
  protected:
  private:

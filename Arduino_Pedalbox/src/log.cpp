@@ -51,3 +51,33 @@ void Log::updateTime() {
   millisecond = (counter - seconds);
   counter = millis();
 }
+
+void Log::createLog(kLogType log_type, const char *file, int line,
+                    const char *message) {
+  char log_type_str[10];
+  switch (log_type) {
+    case kInfo:
+      strcpy(log_type_str, "INFO");
+      break;
+    case kWarning:
+      strcpy(log_type_str, "WARNING");
+      break;
+    case kError:
+      strcpy(log_type_str, "ERROR");
+      break;
+    case kDebug:
+      strcpy(log_type_str, "DEBUG");
+      break;
+    default:
+      strcpy(log_type_str, "UNKNOWN");
+      break;
+  }
+  Serial.print(log_type_str);
+  Serial.print(" ");
+  Serial.print(file);
+  Serial.print(":");
+  Serial.print(line);
+  Serial.print(": ");
+  Serial.print(message);
+  Serial.print("\n");
+}
