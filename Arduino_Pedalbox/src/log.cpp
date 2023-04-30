@@ -18,12 +18,6 @@ void Log::printDigits(int digits) {
 }
 
 void Log::digitalClockDisplay() {
-  // display counter
-  Serial.print("\n");
-  Serial.print("counter: ");
-  Serial.print(counter);
-  Serial.print(" milliseconds\n");
-
   // digital clock display of the time
   Serial.print(hour());
   printDigits(minute());
@@ -36,11 +30,6 @@ void Log::digitalClockDisplay() {
   }
   Serial.print(millisecond);
   Serial.print(" ");
-  Serial.print(day());
-  Serial.print(" ");
-  Serial.print(month());
-  Serial.print(" ");
-  Serial.print(year());
 }
 
 void Log::updateTime() {
@@ -61,9 +50,6 @@ void Log::updateTime() {
 void Log::createLog(kLogType log_type, const char *file, int line,
                     const char *message) {
   char log_type_str[10];
-
-  digitalClockDisplay();
-  Serial.print(" ");
   switch (log_type) {
     case kInfo:
       strcpy(log_type_str, "INFO");
@@ -81,6 +67,8 @@ void Log::createLog(kLogType log_type, const char *file, int line,
       strcpy(log_type_str, "UNKNOWN");
       break;
   }
+
+  digitalClockDisplay();
   Serial.print(log_type_str);
   Serial.print(" ");
   Serial.print(file);
@@ -88,7 +76,5 @@ void Log::createLog(kLogType log_type, const char *file, int line,
   Serial.print(line);
   Serial.print(": ");
   Serial.print(message);
-  Serial.print(" ");
-  Serial.print(time);
   Serial.print("\n");
 }
