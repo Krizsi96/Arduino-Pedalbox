@@ -10,7 +10,7 @@ TEST(LogTest, TC150_SendLogMessageToSerialPort) {
   // Setup
   ArduinoSerialMock serial_mock;
   ArduinoTimeInterface time;
-  TimeLibInterface time_lib;
+  TimeLibMock time_lib;
   Log log(&time, &serial_mock, &time_lib);
 
   char time_str[] = "00:00:00.000";
@@ -19,9 +19,12 @@ TEST(LogTest, TC150_SendLogMessageToSerialPort) {
   int line = 150;
   char message[] = "Send log message to serial port";
   char buffer[100];
-  sprintf(buffer, "%s %s:%d: %s\n", log_type, file, line, message);
+  sprintf(buffer, "%s %s %s:%d: %s\n", time_str, log_type, file, line, message);
   const std::string expected = buffer;
 
+  EXPECT_CALL(time_lib, get_hour()).WillOnce(::testing::Return(0));
+  EXPECT_CALL(time_lib, get_minute()).WillOnce(::testing::Return(0));
+  EXPECT_CALL(time_lib, get_second()).WillOnce(::testing::Return(0));
   EXPECT_CALL(serial_mock, print(expected));
 
   log.createLog(Log::kInfo, file, line, message);
