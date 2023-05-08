@@ -61,29 +61,6 @@ Log::Log(ArduinoTimeInterface* Time, ArduinoSerialInterface* Serial,
   TimeLib_->SetTime(start_time);
 }
 
-void Log::printDigits(int digits) {
-  // utility function for digital clock display: prints preceding colon and
-  // leading 0
-  Serial_->print(":");
-  if (digits < 10) Serial_->print('0');
-  Serial_->print(digits);
-}
-
-void Log::digitalClockDisplay() {
-  // digital clock display of the time
-  Serial_->print(TimeLib_->get_hour());
-  printDigits(TimeLib_->get_minute());
-  printDigits(TimeLib_->get_second());
-  Serial_->print(".");
-  if (millisecond < 10) {
-    Serial_->print("00");
-  } else if ((10 <= millisecond) && (millisecond < 100)) {
-    Serial_->print("0");
-  }
-  Serial_->print(millisecond);
-  Serial_->print(" ");
-}
-
 void Log::updateTime() {
   if (millis_counter % 1000 == 0) {  // every second
     if (!time_updated) {
@@ -101,6 +78,10 @@ void Log::updateTime() {
 
 void Log::createLog(kLogType log_type, const char* file, int line,
                     const char* message) {
+  int hour = TimeLib_->get_hour();
+  int minute = TimeLib_->get_minute();
+  int second = TimeLib_->get_second();
+
   char log_type_str[10];
   switch (log_type) {
     case kInfo:
@@ -120,18 +101,9 @@ void Log::createLog(kLogType log_type, const char* file, int line,
       break;
   }
 
-  // digitalClockDisplay();
-  // Serial_->print(log_type_str);
-  // Serial_->print(" ");
-  // Serial_->print(file);
-  // Serial_->print(":");
-  // Serial_->print(line);
-  // Serial_->print(": ");
-  // Serial_->print(message);
-  // Serial_->print("\n");
-
   char log_message[strlen(log_type_str) + strlen(file) + strlen(message) + 30];
-  sprintf(log_message, "%s %s:%d: %s\n", log_type_str, file, line, message);
+  sprintf(log_message, "%02d:%02d:%02d.%03u %s %s:%d: %s\n", hour, minute,
+          second, millisecond, log_type_str, file, line, message);
 
 #ifdef HOST
   const std::string log_message_test = log_message;

@@ -21,7 +21,6 @@ class Log {
   Log(TimeLibInterface* TimeLib);
   Log(ArduinoTimeInterface* Time, ArduinoSerialInterface* Serial,
       TimeLibInterface* TimeLib);
-  void digitalClockDisplay();
   void updateTime();
   void createLog(kLogType log_type, const char* file, int line,
                  const char* message);
@@ -36,8 +35,6 @@ class Log {
   ArduinoTimeInterface* Time_;
   TimeLibInterface* TimeLib_;
   ArduinoSerialInterface* Serial_;
-
-  void printDigits(int digits);
 };
 
 #endif  //_LOG_H_
