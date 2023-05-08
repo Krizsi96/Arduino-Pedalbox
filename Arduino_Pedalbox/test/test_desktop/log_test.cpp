@@ -6,7 +6,7 @@
 
 using ::testing::_;
 
-TEST(LogTest, TC149LogMessageSturcture) {
+TEST(LogTest, TC149LogMessageStructure) {
   // Setup
   ArduinoSerialMock serial_mock;
   ArduinoTimeInterface time;
