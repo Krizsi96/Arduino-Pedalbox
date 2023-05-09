@@ -6,6 +6,30 @@
 
 using namespace testing;
 
+TEST(LogTest, TC150SendLogMessageToSerialPort) {
+  // Preconditions
+  ArduinoSerialMock serial_mock;
+  ArduinoTimeInterface time;
+  TimeLibMock time_lib;
+  Log log(&time, &serial_mock, &time_lib);
+
+  char file[] = "";
+  int line = 0;
+  char expected_message[] = "Hello World!";
+
+  EXPECT_CALL(time_lib, get_hour()).WillOnce(::testing::Return(0));
+  EXPECT_CALL(time_lib, get_minute()).WillOnce(::testing::Return(0));
+  EXPECT_CALL(time_lib, get_second()).WillOnce(::testing::Return(0));
+
+  // Expected behavior
+  EXPECT_CALL(serial_mock, print(StrNe("")));
+
+  // Action
+  log.createLog(Log::kInfo, file, line, expected_message);
+
+  ::testing::Mock::VerifyAndClearExpectations(&serial_mock);
+}
+
 TEST(LogTest, TC149LogMessageStructure) {
   // Preconditions
   ArduinoSerialMock serial_mock;
