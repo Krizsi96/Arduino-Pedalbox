@@ -4,7 +4,7 @@
 
 #include <cstring>
 
-using ::testing::_;
+using namespace testing;
 
 TEST(LogTest, TC149LogMessageStructure) {
   // Preconditions
@@ -23,10 +23,10 @@ TEST(LogTest, TC149LogMessageStructure) {
   char file[] = "test/test_desktop/log_test.cpp";
   int line = 150;
   char message[] = "Send log message to serial port";
-  char buffer[100];
-  sprintf(buffer, "%s %s %s:%d: %s\n", time_str, log_type, file, line, message);
-  const std::string expected = buffer;
-  EXPECT_CALL(serial_mock, print(expected));
+  char expected_log[100];
+  sprintf(expected_log, "%s %s %s:%d: %s\n", time_str, log_type, file, line,
+          message);
+  EXPECT_CALL(serial_mock, print(StrEq(expected_log))).Times(1);
 
   // Action
   log.createLog(Log::kInfo, file, line, message);

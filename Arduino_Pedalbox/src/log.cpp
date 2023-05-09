@@ -105,10 +105,5 @@ void Log::createLog(kLogType log_type, const char* file, int line,
   sprintf(log_message, "%02d:%02d:%02d.%03u %s %s:%d: %s\n", hour, minute,
           second, millisecond, log_type_str, file, line, message);
 
-#ifdef HOST
-  const std::string log_message_test = log_message;
-  Serial_->print(log_message_test);
-#else
   Serial_->print(log_message);
-#endif
 }
