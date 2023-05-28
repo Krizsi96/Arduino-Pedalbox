@@ -1,24 +1,24 @@
-#ifndef _LOG_NEW_H
-#define _LOG_NEW_H
+#ifndef _LOG_HPP_
+#define _LOG_HPP_
 
+#include <stdint.h>
 #include <stdio.h>
 #include <string.h>
 
-#include "SerialInterface.h"
-#include "TimeInterface.h"
+#include "SerialInterface.hpp"
+#include "TimeInterface.hpp"
 
 class Log {
  public:
   enum kLogType { kInfo, kWarning, kError, kDebug };
-  Log(SerialInterface* Serial, TimeInterface* Time);
+  Log(TimeInterface* Time, SerialInterface* Serial);
   ~Log();
-  void updateTime();
   void createLog(kLogType log_type, const char* file, int line,
                  const char* message);
 
  private:
-  SerialInterface* Serial_;
   TimeInterface* Time_;
+  SerialInterface* Serial_;
 };
 
-#endif  //_LOG_NEW_H
+#endif  //_LOG_HPP_

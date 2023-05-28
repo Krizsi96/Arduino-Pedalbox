@@ -1,5 +1,6 @@
-#include <ArduinoWrapper.h>
 #include <unity.h>
+
+#include <ArduinoWrapper.hpp>
 
 #include "ArduinoWrapper_test.hpp"
 

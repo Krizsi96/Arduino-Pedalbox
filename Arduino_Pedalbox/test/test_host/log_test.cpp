@@ -1,8 +1,8 @@
-#include <SerialInterface.h>
-#include <TimeInterface.h>
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
 
+#include <SerialInterface.hpp>
+#include <TimeInterface.hpp>
 #include <cstring>
 #include <log.hpp>
 
@@ -31,7 +31,7 @@ TEST(LogTest, TC150SendLogMessageToSerialPort) {
   // Preconditions
   SerialMock serial_mock;
   TimeMock time_mock;
-  Log log(&serial_mock, &time_mock);
+  Log log(&time_mock, &serial_mock);
 
   char file[] = "";
   int line = 0;
@@ -55,7 +55,7 @@ TEST(LogTest, TC149TestLogMessageStructureWithZeroTime) {
   // Preconditions
   SerialMock serial_mock;
   TimeMock time_mock;
-  Log log(&serial_mock, &time_mock);
+  Log log(&time_mock, &serial_mock);
 
   EXPECT_CALL(time_mock, get_hour()).WillOnce(::testing::Return(0));
   EXPECT_CALL(time_mock, get_minute()).WillOnce(::testing::Return(0));
@@ -83,7 +83,7 @@ TEST(LogTest, T149TestLogMessageStructureWithOneDigit) {
   // Preconditions
   SerialMock serial_mock;
   TimeMock time_mock;
-  Log log(&serial_mock, &time_mock);
+  Log log(&time_mock, &serial_mock);
 
   EXPECT_CALL(time_mock, get_hour()).WillOnce(::testing::Return(1));
   EXPECT_CALL(time_mock, get_minute()).WillOnce(::testing::Return(1));
@@ -111,7 +111,7 @@ TEST(LogTest, T149TestLogMessageStuctureWithTwoDigits) {
   // Preconditions
   SerialMock serial_mock;
   TimeMock time_mock;
-  Log log(&serial_mock, &time_mock);
+  Log log(&time_mock, &serial_mock);
 
   EXPECT_CALL(time_mock, get_hour()).WillOnce(::testing::Return(11));
   EXPECT_CALL(time_mock, get_minute()).WillOnce(::testing::Return(11));
@@ -139,7 +139,7 @@ TEST(LogTest, TC149TestLogMessageStructureWithMaxDigits) {
   // Preconditions
   SerialMock serial_mock;
   TimeMock time_mock;
-  Log log(&serial_mock, &time_mock);
+  Log log(&time_mock, &serial_mock);
 
   EXPECT_CALL(time_mock, get_hour()).WillOnce(::testing::Return(23));
   EXPECT_CALL(time_mock, get_minute()).WillOnce(::testing::Return(59));

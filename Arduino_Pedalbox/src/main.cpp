@@ -1,10 +1,10 @@
-#include "ArduinoWrapper.h"
+#include "ArduinoWrapper.hpp"
 #include "log.hpp"
 
 #define BUTTON_PIN 5
 
 ArduinoWrapper arduino;
-Log logging(&arduino.Serial, &arduino.Time);
+Log logging(&arduino.Time, &arduino.Serial);
 long time = 0;
 long previous_time = 0;
 bool button_pressed = false;

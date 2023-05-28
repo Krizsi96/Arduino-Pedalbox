@@ -1,7 +1,7 @@
-#include <ArduinoWrapper.h>
 #include <unity.h>
 
 #include <ArduinoWrapper.cpp>
+#include <ArduinoWrapper.hpp>
 
 void test_if_hour_is_set_correctly(void) {
   ArduinoWrapper arduino;

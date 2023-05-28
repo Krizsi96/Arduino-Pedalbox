@@ -1,6 +1,6 @@
 #include "log.hpp"
 
-Log::Log(SerialInterface* Serial, TimeInterface* Time)
+Log::Log(TimeInterface* Time, SerialInterface* Serial)
     : Serial_(Serial), Time_(Time) {}
 
 Log::~Log() {}
