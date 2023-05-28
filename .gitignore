@@ -1,8 +1,5 @@
 # hidden files for unsuccessful deletes
 .fuse_hidden*
 
-# bash files
-*.sh
-
 # template files
 .ejs
