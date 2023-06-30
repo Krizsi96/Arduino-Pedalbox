@@ -5,7 +5,8 @@ SOURCE_MODEL='wiki/src/system_design.mdj'
 PACKAGE_NAME='Package1'
 
 echo -e "${CYAN}generate diagrams form UML model${NC}"
-staruml image ${SOURCE_MODEL} -f jpeg -o "wiki/src/diagrams/<%=filenamify(element.name)%>_diagram.jpeg"
+staruml image ${SOURCE_MODEL} -f svg -o "wiki/src/diagrams/<%=filenamify(element.name)%>_diagram.svg"
+python3 ../UML_code_generator/svg_postprocess.py /home/krizsi90/Documents/Projects/Arduino_Pedalbox/wiki/src/diagrams/
 
 echo ""
 
