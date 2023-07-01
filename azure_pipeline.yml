@@ -1,0 +1,35 @@
+trigger:
+- feat/*
+- main
+
+pool:
+  Default
+
+jobs:
+- job:
+  displayName: 'Run host tests'
+  steps:
+  - script: |
+        cd Arduino_Pedalbox
+        source ~/.platformio/penv/bin/activate
+        pio test -e host --junit-output-path .
+        sed -i s/utf8/UTF-8/ pio-test-report-*.xml
+    displayName: 'Run the tests of host environment'
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: '**/pio-test-report-*.xml'
+
+- job:
+  displayName: 'Run target tests'
+  steps:
+  - script: |
+        cd Arduino_Pedalbox
+        source ~/.platformio/penv/bin/activate
+        pio test -e leonardo --junit-output-path .
+        sed -i s/utf8/UTF-8/ pio-test-report-*.xml
+    displayName: 'Run the tests of leonardo environment'
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: '**/pio-test-report-*.xml'
