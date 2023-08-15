@@ -1,10 +1,10 @@
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
 
+#include <Log.hpp>
 #include <SerialInterface.hpp>
 #include <TimeInterface.hpp>
 #include <cstring>
-#include <log.hpp>
 
 using namespace testing;
 

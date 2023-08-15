@@ -1,4 +1,4 @@
-#include "log.hpp"
+#include "Log.hpp"
 
 Log::Log(TimeInterface* Time, SerialInterface* Serial)
     : Serial_(Serial), Time_(Time) {}
