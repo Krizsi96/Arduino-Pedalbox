@@ -19,3 +19,6 @@ staruml ejs ${SOURCE_MODEL} -t ../UML_code_generator/.ejs/cpp-class.ejs -s "${PA
 echo -e "${CYAN}format header files with clang (google style)${NC}"
 clang-format -i -style=Google Arduino_Pedalbox/src/*.hpp
 clang-format -i -style=Google Arduino_Pedalbox/src/*.h
+
+echo -e "${CYAN}post process code${NC}"
+python3 postprocess_code_gen.py
