@@ -19,9 +19,11 @@ def main():
     subprocess.run(['staruml', 'ejs', SOURCE_MODEL, '-t', '../UML_code_generator/.ejs/cpp-class.ejs', '-s', f'{PACKAGE_NAME}::@UMLClass', '-o', 'Arduino_Pedalbox/src/<%=filenamify(element.name)%>.hpp'])
     print(f"{CYAN}generate header files from UML interfaces{NC}")
     subprocess.run(['staruml', 'ejs', SOURCE_MODEL, '-t', '../UML_code_generator/.ejs/cpp-class.ejs', '-s', f'{PACKAGE_NAME}::@UMLInterface', '-o', 'Arduino_Pedalbox/src/<%=filenamify(element.name)%>.hpp'])
+    
     print(f"{CYAN}format header files with clang (google style){NC}")
     os.system('clang-format -i -style=Google Arduino_Pedalbox/src/*.hpp')
     os.system('clang-format -i -style=Google Arduino_Pedalbox/src/*.h')
+
     print(f"{CYAN}post process code{NC}")
     TimeInterfaceHPP = file("Arduino_Pedalbox/src/TimeInterface.hpp")
     TimeInterfaceHPP.replacePart("~TimeInterface() = 0", "~TimeInterface(){}")
