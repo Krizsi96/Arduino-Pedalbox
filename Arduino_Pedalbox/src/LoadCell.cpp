@@ -1,13 +1,16 @@
 #include "LoadCell.hpp"
 
-LoadCell::LoadCell() {}
+LoadCell::LoadCell(byte serial_clock_pin_init, byte serial_data_pin_init)
+    : serial_clock_pin_(serial_clock_pin_init),
+      serial_data_pin_(serial_data_pin_init) {}
 
-LoadCell::~LoadCell() {}
+void LoadCell::begin() {
+  load_cell_.begin(serial_data_pin_, serial_clock_pin_);
+}
 
-int32_t LoadCell::getRawValue() { return 0; }
+int32_t LoadCell::getReadingValue() {
+  int32_t reading = load_cell_.get_value();
+  return reading;
+}
 
-void LoadCell::applyFilter() {}
-
-void LoadCell::applyOffset() {}
-
-void LoadCell::updateFilterParameter() {}
+void LoadCell::updateOffset() {}
