@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-#include "Sensor.hpp"
+#include "SensorInterface.hpp"
 
 class Pedal {
  public:
