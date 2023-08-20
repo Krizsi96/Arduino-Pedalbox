@@ -33,8 +33,8 @@ def main():
     insertLine = "\n\n#ifdef HOST\n#include <cstddef>\n#endif"
     SerialInterfaceHPP.insertAfter("#include <stdint.h>", insertLine)
 
-    SensorHPP = file("Arduino_Pedalbox/src/Sensor.hpp")
-    SensorHPP.replacePart("virtual ~Sensor() = 0;", "virtual ~Sensor(){};")
+    SensorInterfaceHPP = file("Arduino_Pedalbox/src/SensorInterface.hpp")
+    SensorInterfaceHPP.replacePart("virtual ~SensorInterface() = 0;", "virtual ~SensorInterface(){};")
 
 if __name__ == '__main__':
     main()
