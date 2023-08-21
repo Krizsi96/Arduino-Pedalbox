@@ -1,18 +1,16 @@
 #include "ArduinoWrapper.hpp"
 #include "LoadCell.hpp"
-
-#define HX711_DOUT 10
-#define HX711_SCK 9
+#include "SensorConfig.h"
 
 ArduinoWrapper arduino;
 long time = 0;
 long previous_time = 0;
 
-LoadCell load_cell(HX711_SCK, HX711_DOUT);
+LoadCell load_cell(BRAKE_PEDAL_SCK, BRAKE_PEDAL_DOUT);
 
 void setup() {
   Serial.begin(9600);
-  load_cell.updateOffset(12000);
+  load_cell.updateOffset(BRAKE_PEDAL_OFFSET);
 }
 
 void loop() {
