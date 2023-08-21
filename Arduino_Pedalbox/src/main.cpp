@@ -10,7 +10,7 @@ LoadCell load_cell(BRAKE_PEDAL_SCK, BRAKE_PEDAL_DOUT);
 
 void setup() {
   Serial.begin(9600);
-  load_cell.updateOffset(BRAKE_PEDAL_OFFSET);
+  load_cell.setOffset(BRAKE_PEDAL_OFFSET);
 }
 
 void loop() {

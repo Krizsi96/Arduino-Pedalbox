@@ -10,7 +10,7 @@ class LoadCell : public SensorInterface {
   LoadCell(byte serial_clock_pin_init, byte serial_data_pin_init);
   ~LoadCell() override = default;
   int32_t getReadingValue() override;
-  void updateOffset(int32_t new_offset) override;
+  void setOffset(int32_t new_offset) override;
 
  private:
   HX711 load_cell_;

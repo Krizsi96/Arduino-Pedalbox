@@ -9,7 +9,7 @@ int32_t LoadCell::getReadingValue() {
   return reading;
 }
 
-void LoadCell::updateOffset(int32_t new_offset) {
+void LoadCell::setOffset(int32_t new_offset) {
   int32_t offset_to_substract = new_offset * -1;
   load_cell_.set_offset(offset_to_substract);
 }

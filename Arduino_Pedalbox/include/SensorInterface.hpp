@@ -6,7 +6,7 @@
 class SensorInterface {
  public:
   virtual int32_t getReadingValue() = 0;
-  virtual void updateOffset(int32_t new_offset) = 0;
+  virtual void setOffset(int32_t new_offset) = 0;
   virtual ~SensorInterface() {}
 };
 
