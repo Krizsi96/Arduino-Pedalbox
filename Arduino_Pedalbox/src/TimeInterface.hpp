@@ -5,7 +5,7 @@
 
 class TimeInterface {
  public:
-  virtual ~TimeInterface(){};
+  virtual ~TimeInterface() {}
   virtual void SetTime(int hour, int minute, int second, int day, int month,
                        int year) = 0;
   virtual void SetTime(uint32_t time) = 0;

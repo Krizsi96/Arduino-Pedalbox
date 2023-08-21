@@ -26,15 +26,15 @@ def main():
 
     print(f"{CYAN}post process code{NC}")
     TimeInterfaceHPP = file("Arduino_Pedalbox/src/TimeInterface.hpp")
-    TimeInterfaceHPP.replacePart("~TimeInterface() = 0", "~TimeInterface(){}")
+    TimeInterfaceHPP.replacePart("~TimeInterface() = 0;", "~TimeInterface() {}")
 
     SerialInterfaceHPP = file("Arduino_Pedalbox/src/SerialInterface.hpp")
-    SerialInterfaceHPP.replacePart("~SerialInterface() = 0", "~SerialInterface(){}")
+    SerialInterfaceHPP.replacePart("~SerialInterface() = 0;", "~SerialInterface() {}")
     insertLine = "\n\n#ifdef HOST\n#include <cstddef>\n#endif"
     SerialInterfaceHPP.insertAfter("#include <stdint.h>", insertLine)
 
     SensorInterfaceHPP = file("Arduino_Pedalbox/src/SensorInterface.hpp")
-    SensorInterfaceHPP.replacePart("virtual ~SensorInterface() = 0;", "virtual ~SensorInterface(){};")
+    SensorInterfaceHPP.replacePart("virtual ~SensorInterface() = 0;", "virtual ~SensorInterface() {}")
 
 if __name__ == '__main__':
     main()
