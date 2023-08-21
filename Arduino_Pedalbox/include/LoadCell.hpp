@@ -11,7 +11,7 @@ class LoadCell : public SensorInterface {
   ~LoadCell() override = default;
   void begin();
   int32_t getReadingValue() override;
-  void updateOffset() override;
+  void updateOffset(int32_t new_offset) override;
 
  private:
   HX711 load_cell_;
