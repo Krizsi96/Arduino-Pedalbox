@@ -48,13 +48,3 @@ void test_if_time_is_updated(void) {
   arduino.Time.update();
   TEST_ASSERT_NOT_EQUAL(previous_millisecond, arduino.Time.get_millisecond());
 }
-
-void run_arduino_wrapper_test(void) {
-  RUN_TEST(test_if_hour_is_set_correctly);
-  RUN_TEST(test_if_minute_is_set_correctly);
-  RUN_TEST(test_if_second_is_set_correctly);
-  RUN_TEST(test_if_hour_is_set_correctly_with_unix_time);
-  RUN_TEST(test_if_minute_is_set_correctly_with_unix_time);
-  RUN_TEST(test_if_second_is_set_correctly_with_unix_time);
-  RUN_TEST(test_if_time_is_updated);
-}
