@@ -35,7 +35,6 @@ void setup() {
   UNITY_BEGIN();
 
   lcd.clear();
-  lcd.setCursor(1, 0);
   lcd.print("ArduinoWrapper tests");
 
   printTestInfo(1, "test_if_hour_is_set_correctly");
@@ -81,4 +80,7 @@ void setup() {
   lcd.print("Tests finished!");
 }
 
-void loop() { delay(1000); }
+void loop() {
+  lcd.setCursor(0, 1);
+  lcd.print(millis() / 1000);
+}
