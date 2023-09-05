@@ -69,6 +69,12 @@ void setup() {
   printTestInfo(9, "set_offset_for_potmeter");
   RUN_TEST(set_offset_for_potmeter);
 
+  printTestInfo(10, "read_load_cell_value");
+  RUN_TEST(read_load_cell_value);
+
+  printTestInfo(11, "set_offset_for_load_cell");
+  RUN_TEST(set_offset_for_load_cell);
+
   UNITY_END();
 
   lcd.clear();
