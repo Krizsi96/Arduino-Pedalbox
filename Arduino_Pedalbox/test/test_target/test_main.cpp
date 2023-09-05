@@ -4,6 +4,7 @@
 #include <ArduinoWrapper.hpp>
 
 #include "ArduinoWrapper_test.hpp"
+#include "test_SensorInterface.hpp"
 
 #define LCD_RS 8
 #define LCD_EN 9
@@ -18,7 +19,7 @@ void printTestInfo(uint8_t number, const char* test_name) {
   lcd.clear();
   lcd.print("Test ");
   lcd.print(number);
-  lcd.print("/7");
+  lcd.print("/9");
   lcd.setCursor(0, 1);
   lcd.print(test_name);
 }
@@ -33,7 +34,8 @@ void setup() {
   lcd.print("Starting tests...");
   UNITY_BEGIN();
 
-  lcd.setCursor(0, 1);
+  lcd.clear();
+  lcd.setCursor(1, 0);
   lcd.print("ArduinoWrapper tests");
 
   printTestInfo(1, "test_if_hour_is_set_correctly");
@@ -56,6 +58,16 @@ void setup() {
 
   printTestInfo(7, "test_if_time_is_updated");
   RUN_TEST(test_if_time_is_updated);
+
+  lcd.clear();
+  lcd.setCursor(1, 0);
+  lcd.print("SensorInterface tests");
+
+  printTestInfo(8, "read_potmeter_value");
+  RUN_TEST(read_potmeter_value);
+
+  printTestInfo(9, "set_offset_for_potmeter");
+  RUN_TEST(set_offset_for_potmeter);
 
   UNITY_END();
 
