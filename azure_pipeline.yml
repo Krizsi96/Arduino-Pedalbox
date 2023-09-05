@@ -9,28 +9,50 @@ pool:
 jobs:
 - job:
   displayName: 'Run host tests'
+  variables:
+    returnCode: 0
   steps:
   - script: |
         cd Arduino_Pedalbox
         source ~/.platformio/penv/bin/activate
         pio test -e host --junit-output-path .
+        returnCode=$?
         sed -i s/utf8/UTF-8/ pio-test-report-*.xml
+        if [ $returnCode -eq 1 ]; then
+          echo "Build failed"
+          exit $returnCode
+        elif [ $returnCode -eq 2 ]; then
+          echo "Tests failed"
+          exit $returnCode
+        fi
     displayName: 'Run the tests of host environment'
   - task: PublishTestResults@2
     inputs:
       testResultsFormat: 'JUnit'
       testResultsFiles: '**/pio-test-report-*.xml'
+    condition: always()
 
 - job:
   displayName: 'Run target tests'
+  variables:
+    returnCode: 0
   steps:
   - script: |
         cd Arduino_Pedalbox
         source ~/.platformio/penv/bin/activate
         pio test -e leonardo --junit-output-path .
+        returnCode=$?
         sed -i s/utf8/UTF-8/ pio-test-report-*.xml
+        if [ $returnCode -eq 1 ]; then
+          echo "Build failed"
+          exit $returnCode
+        elif [ $returnCode -eq 2 ]; then
+          echo "Tests failed"
+          exit $returnCode
+        fi
     displayName: 'Run the tests of leonardo environment'
   - task: PublishTestResults@2
     inputs:
       testResultsFormat: 'JUnit'
       testResultsFiles: '**/pio-test-report-*.xml'
+    condition: always()
