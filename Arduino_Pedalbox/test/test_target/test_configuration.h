@@ -11,5 +11,6 @@
 #define LCD_D5 5
 #define LCD_D6 6
 #define LCD_D7 7
+#define LCD_BACKLIGHT_PIN 14
 
 #endif  // _TEST_CONFIGURATION_H_

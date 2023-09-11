@@ -1,4 +1,5 @@
 #include <LiquidCrystal.h>
+#include <arduino-timer.h>
 #include <unity.h>
 
 #include <ArduinoWrapper.hpp>
@@ -8,22 +9,22 @@
 #include "test_configuration.h"
 
 LiquidCrystal lcd(LCD_RS, LCD_EN, LCD_D4, LCD_D5, LCD_D6, LCD_D7);
+auto timer = timer_create_default();
 
-void printTestInfo(uint8_t number, const char* test_name) {
-  lcd.clear();
-  lcd.print("Test ");
-  lcd.print(number);
-  lcd.print("/9");
-  lcd.setCursor(0, 1);
-  lcd.print(test_name);
-}
+void printTestInfo(uint8_t number, const char* test_name);
+bool TurnOnBacklight(void*);
+bool TurnOffBacklight(void*);
 
 void setup() {
   Serial.begin(9600);
+
+  TurnOnBacklight(nullptr);
+
   while (!Serial) {
     {
     }  // wait for serial port to connect. Needed for native USB port only
   }
+
   lcd.begin(16, 2);
   lcd.print("Starting tests...");
   UNITY_BEGIN();
@@ -72,9 +73,32 @@ void setup() {
 
   lcd.clear();
   lcd.print("Tests finished!");
+
+  timer.in(5000, TurnOffBacklight);
 }
 
 void loop() {
+  timer.tick();
   lcd.setCursor(0, 1);
   lcd.print(millis() / 1000);
+}
+
+void printTestInfo(uint8_t number, const char* test_name) {
+  lcd.clear();
+  lcd.print("Test ");
+  lcd.print(number);
+  lcd.print("/9");
+  lcd.setCursor(0, 1);
+  lcd.print(test_name);
+}
+
+bool TurnOnBacklight(void*) {
+  pinMode(LCD_BACKLIGHT_PIN, OUTPUT);
+  digitalWrite(LCD_BACKLIGHT_PIN, HIGH);
+  return true;
+}
+
+bool TurnOffBacklight(void*) {
+  digitalWrite(LCD_BACKLIGHT_PIN, LOW);
+  return true;
 }
