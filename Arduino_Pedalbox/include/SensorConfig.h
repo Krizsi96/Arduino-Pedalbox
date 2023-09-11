@@ -1,7 +1,7 @@
 #pragma once
 
 #define BRAKE_PEDAL_DOUT 10
-#define BRAKE_PEDAL_SCK 9
+#define BRAKE_PEDAL_SCK 16
 #define BRAKE_PEDAL_OFFSET 12000
 
 #define THROTTLE_PEDAL_PIN A0
