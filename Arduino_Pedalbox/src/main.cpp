@@ -12,6 +12,8 @@
 ArduinoWrapper arduino;
 
 auto timer = timer_create_default();
+int32_t previous_time = 0;
+int32_t current_time = 0;
 
 LoadCell brake_load_cell(BRAKE_PEDAL_SCK, BRAKE_PEDAL_DOUT);
 Potmeter throttle_potmeter(THROTTLE_PEDAL_PIN);
@@ -24,6 +26,8 @@ Pedal clutch_pedal(&clutch_potmeter);
 FilterOnePole brake_filter_lowpass(LOWPASS, FILTER_FREQUENCY);
 
 bool showPedalReadings(void *);
+void tick();
+int32_t tack();
 
 void setup() {
   Serial.begin(9600);
@@ -51,4 +55,11 @@ bool showPedalReadings(void *) {
   Serial.print(">clutch:");
   Serial.println(clutch_pedal_reading);
   return true;
+}
+
+void tick() { previous_time = micros(); }
+
+int32_t tack() {
+  current_time = micros();
+  return current_time - previous_time;
 }
