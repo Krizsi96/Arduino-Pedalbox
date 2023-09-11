@@ -24,6 +24,8 @@ Pedal throttle_pedal(&throttle_potmeter);
 Pedal clutch_pedal(&clutch_potmeter);
 
 FilterOnePole brake_filter_lowpass(LOWPASS, FILTER_FREQUENCY);
+FilterOnePole throttle_filter_lowpass(LOWPASS, FILTER_FREQUENCY);
+FilterOnePole clutch_filter_lowpass(LOWPASS, FILTER_FREQUENCY);
 
 bool showPedalReadings(void *);
 void tick();
@@ -34,26 +36,40 @@ void setup() {
   brake_pedal.setOffset(BRAKE_PEDAL_OFFSET);
   throttle_pedal.setOffset(THROTTLE_PEDAL_OFFSET);
   clutch_pedal.setOffset(CLUTCH_PEDAL_OFFSET);
-  timer.every(1, showPedalReadings);
+  timer.every(10, showPedalReadings);
 }
 
 void loop() { timer.tick(); }
 
 bool showPedalReadings(void *) {
+  tick();
+
   int32_t brake_pedal_reading = brake_pedal.readValue();
   int32_t throttle_pedal_reading = throttle_pedal.readValue();
   int32_t clutch_pedal_reading = clutch_pedal.readValue();
 
   brake_filter_lowpass.input(brake_pedal_reading);
+  throttle_filter_lowpass.input(throttle_pedal_reading);
+  clutch_filter_lowpass.input(clutch_pedal_reading);
 
   Serial.print(">brake:");
   Serial.println(brake_pedal_reading);
   Serial.print(">brake_filter:");
   Serial.println(brake_filter_lowpass.output());
+
   Serial.print(">throttle:");
   Serial.println(throttle_pedal_reading);
+  Serial.print(">throttle_filter:");
+  Serial.println(throttle_filter_lowpass.output());
+
   Serial.print(">clutch:");
   Serial.println(clutch_pedal_reading);
+  Serial.print(">clutch_filter:");
+  Serial.println(clutch_filter_lowpass.output());
+
+  Serial.print("cycle time: ");
+  Serial.println(tack());
+
   return true;
 }
 
