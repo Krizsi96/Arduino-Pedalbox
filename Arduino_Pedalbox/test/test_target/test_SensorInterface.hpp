@@ -4,10 +4,7 @@
 #include "LoadCell.hpp"
 #include "Potmeter.cpp"
 #include "Potmeter.hpp"
-
-#define TEST_POTMETER_PIN A0
-#define LOAD_CELL_CLOCK_PIN 16
-#define LOAD_CELL_DATA_PIN 10
+#include "test_configuration.h"
 
 void read_potmeter_value(void) {
   // Given
