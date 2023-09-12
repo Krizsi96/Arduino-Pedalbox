@@ -1,4 +1,3 @@
-#include <Filters.h>
 #include <arduino-timer.h>
 
 #include "ArduinoWrapper.hpp"
@@ -6,8 +5,6 @@
 #include "Pedal.hpp"
 #include "Potmeter.hpp"
 #include "SensorConfig.h"
-
-#define FILTER_FREQUENCY 10
 
 ArduinoWrapper arduino;
 
@@ -34,9 +31,15 @@ void setup() {
   throttle_pedal.setOffset(THROTTLE_PEDAL_OFFSET);
   clutch_pedal.setOffset(CLUTCH_PEDAL_OFFSET);
 
-  brake_load_cell.setFilter(LOWPASS, FILTER_FREQUENCY, 0);
-  throttle_potmeter.setFilter(LOWPASS, FILTER_FREQUENCY, 0);
-  clutch_potmeter.setFilter(LOWPASS, FILTER_FREQUENCY, 0);
+  brake_load_cell.setFilter(BRAKE_PEDAL_FILTER_TYPE,
+                            BRAKE_PEDAL_FILTER_FREQUENCY,
+                            BRAKE_PEDAL_INITIAL_VALUE);
+  throttle_potmeter.setFilter(THROTTLE_PEDAL_FILTER_TYPE,
+                              THROTTLE_PEDAL_FILTER_FREQUENCY,
+                              THROTTLE_PEDAL_INITIAL_VALUE);
+  clutch_potmeter.setFilter(CLUTCH_PEDAL_FILTER_TYPE,
+                            CLUTCH_PEDAL_FILTER_FREQUENCY,
+                            CLUTCH_PEDAL_INITIAL_VALUE);
 
   timer.every(10, showPedalReadings);
 }
