@@ -23,19 +23,21 @@ Pedal brake_pedal(&brake_load_cell);
 Pedal throttle_pedal(&throttle_potmeter);
 Pedal clutch_pedal(&clutch_potmeter);
 
-FilterOnePole brake_filter_lowpass(LOWPASS, FILTER_FREQUENCY);
-FilterOnePole throttle_filter_lowpass(LOWPASS, FILTER_FREQUENCY);
-FilterOnePole clutch_filter_lowpass(LOWPASS, FILTER_FREQUENCY);
-
 bool showPedalReadings(void *);
 void tick();
 int32_t tack();
 
 void setup() {
   Serial.begin(9600);
+
   brake_pedal.setOffset(BRAKE_PEDAL_OFFSET);
   throttle_pedal.setOffset(THROTTLE_PEDAL_OFFSET);
   clutch_pedal.setOffset(CLUTCH_PEDAL_OFFSET);
+
+  brake_load_cell.setFilter(LOWPASS, FILTER_FREQUENCY, 0);
+  throttle_potmeter.setFilter(LOWPASS, FILTER_FREQUENCY, 0);
+  clutch_potmeter.setFilter(LOWPASS, FILTER_FREQUENCY, 0);
+
   timer.every(10, showPedalReadings);
 }
 
@@ -44,28 +46,20 @@ void loop() { timer.tick(); }
 bool showPedalReadings(void *) {
   tick();
 
-  int32_t brake_pedal_reading = brake_pedal.readValue();
-  int32_t throttle_pedal_reading = throttle_pedal.readValue();
-  int32_t clutch_pedal_reading = clutch_pedal.readValue();
-
-  brake_filter_lowpass.input(brake_pedal_reading);
-  throttle_filter_lowpass.input(throttle_pedal_reading);
-  clutch_filter_lowpass.input(clutch_pedal_reading);
-
-  Serial.print(">brake:");
-  Serial.println(brake_pedal_reading);
+  Serial.print(">brake_raw:");
+  Serial.println(brake_load_cell.getRawReadingValue());
   Serial.print(">brake_filter:");
-  Serial.println(brake_filter_lowpass.output());
+  Serial.println(brake_pedal.readValue());
 
   Serial.print(">throttle:");
-  Serial.println(throttle_pedal_reading);
+  Serial.println(throttle_potmeter.getRawReadingValue());
   Serial.print(">throttle_filter:");
-  Serial.println(throttle_filter_lowpass.output());
+  Serial.println(throttle_pedal.readValue());
 
   Serial.print(">clutch:");
-  Serial.println(clutch_pedal_reading);
+  Serial.println(clutch_potmeter.getRawReadingValue());
   Serial.print(">clutch_filter:");
-  Serial.println(clutch_filter_lowpass.output());
+  Serial.println(clutch_pedal.readValue());
 
   Serial.print("cycle time: ");
   Serial.println(tack());
