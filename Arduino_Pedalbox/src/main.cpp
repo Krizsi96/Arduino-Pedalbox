@@ -1,3 +1,4 @@
+#include <Joystick.h>
 #include <arduino-timer.h>
 
 #include "ArduinoWrapper.hpp"
@@ -30,12 +31,16 @@ struct Pedalbox {
 Pedalbox pedalbox;
 Pedalbox pedalbox_raw;
 
+Joystick_ game_controller;
+
 bool showPedalReadings(void *);
+bool updateGameController(void *);
 void tick();
 int32_t tack();
 
 void setup() {
   Serial.begin(9600);
+  game_controller.begin();
 
   brake_pedal.setOffset(BRAKE_PEDAL_OFFSET);
   throttle_pedal.setOffset(THROTTLE_PEDAL_OFFSET);
@@ -51,7 +56,10 @@ void setup() {
                             CLUTCH_PEDAL_FILTER_FREQUENCY,
                             CLUTCH_PEDAL_INITIAL_VALUE);
 
+  game_controller.setThrottleRange(0, 1023);
+
   timer.every(10, showPedalReadings);
+  timer.every(50, updateGameController);
 }
 
 void loop() {
@@ -87,6 +95,11 @@ bool showPedalReadings(void *) {
   Serial.print("cycle time: ");
   Serial.println(cycle_time);
 
+  return true;
+}
+
+bool updateGameController(void *) {
+  game_controller.setThrottle(pedalbox.throttle);
   return true;
 }
 
