@@ -23,15 +23,13 @@ Pedal throttle_pedal(&throttle_potmeter);
 Pedal clutch_pedal(&clutch_potmeter);
 
 struct Pedalbox {
+  Joystick_ HIDcontroller;
   int32_t brake;
   int32_t throttle;
   int32_t clutch;
 };
 
 Pedalbox pedalbox;
-Pedalbox pedalbox_raw;
-
-Joystick_ game_controller;
 
 bool showPedalReadings(void *);
 bool updateGameController(void *);
@@ -40,7 +38,7 @@ int32_t tack();
 
 void setup() {
   Serial.begin(9600);
-  game_controller.begin();
+  pedalbox.HIDcontroller.begin();
 
   brake_pedal.setOffset(BRAKE_PEDAL_OFFSET);
   throttle_pedal.setOffset(THROTTLE_PEDAL_OFFSET);
@@ -56,7 +54,7 @@ void setup() {
                             CLUTCH_PEDAL_FILTER_FREQUENCY,
                             CLUTCH_PEDAL_INITIAL_VALUE);
 
-  game_controller.setThrottleRange(0, 1023);
+  pedalbox.HIDcontroller.setThrottleRange(0, 1023);
 
   timer.every(10, showPedalReadings);
   timer.every(50, updateGameController);
@@ -69,25 +67,15 @@ void loop() {
   pedalbox.brake = brake_pedal.readValue();
   pedalbox.throttle = throttle_pedal.readValue();
   pedalbox.clutch = clutch_pedal.readValue();
-
-  pedalbox_raw.brake = brake_load_cell.getRawReadingValue();
-  pedalbox_raw.throttle = throttle_potmeter.getRawReadingValue();
-  pedalbox_raw.clutch = clutch_potmeter.getRawReadingValue();
 }
 
 bool showPedalReadings(void *) {
-  Serial.print(">brake_raw:");
-  Serial.println(pedalbox_raw.brake);
   Serial.print(">brake_filtered:");
   Serial.println(pedalbox.brake);
 
-  Serial.print(">throttle_raw:");
-  Serial.println(pedalbox_raw.throttle);
   Serial.print(">throttle_filtered:");
   Serial.println(pedalbox.throttle);
 
-  Serial.print(">clutch_raw:");
-  Serial.println(pedalbox_raw.clutch);
   Serial.print(">clutch_filtered:");
   Serial.println(pedalbox.clutch);
 
@@ -98,7 +86,7 @@ bool showPedalReadings(void *) {
 }
 
 bool updateGameController(void *) {
-  game_controller.setThrottle(pedalbox.throttle);
+  pedalbox.HIDcontroller.setThrottle(pedalbox.throttle);
   cycle_time = tack();
   return true;
 }
