@@ -69,7 +69,6 @@ void loop() {
   pedalbox.brake = brake_pedal.readValue();
   pedalbox.throttle = throttle_pedal.readValue();
   pedalbox.clutch = clutch_pedal.readValue();
-  cycle_time = tack();
 
   pedalbox_raw.brake = brake_load_cell.getRawReadingValue();
   pedalbox_raw.throttle = throttle_potmeter.getRawReadingValue();
@@ -100,6 +99,7 @@ bool showPedalReadings(void *) {
 
 bool updateGameController(void *) {
   game_controller.setThrottle(pedalbox.throttle);
+  cycle_time = tack();
   return true;
 }
 
