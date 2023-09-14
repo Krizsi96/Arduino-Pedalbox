@@ -79,17 +79,17 @@ void loop() {
 bool showPedalReadings(void *) {
   Serial.print(">brake_raw:");
   Serial.println(pedalbox_raw.brake);
-  Serial.print(">brake:");
+  Serial.print(">brake_filtered:");
   Serial.println(pedalbox.brake);
 
   Serial.print(">throttle_raw:");
   Serial.println(pedalbox_raw.throttle);
-  Serial.print(">throttle:");
+  Serial.print(">throttle_filtered:");
   Serial.println(pedalbox.throttle);
 
   Serial.print(">clutch_raw:");
   Serial.println(pedalbox_raw.clutch);
-  Serial.print(">clutch:");
+  Serial.print(">clutch_filtered:");
   Serial.println(pedalbox.clutch);
 
   Serial.print("cycle time: ");
