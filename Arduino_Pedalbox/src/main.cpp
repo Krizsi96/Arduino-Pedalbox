@@ -77,9 +77,13 @@ bool showPedalReadings(void *) {
 
   Serial.print(">throttle_filtered:");
   Serial.println(pedalbox.throttle);
+  Serial.print(">throttle_raw:");
+  Serial.println(analogRead(THROTTLE_PEDAL_PIN));
 
   Serial.print(">clutch_filtered:");
   Serial.println(pedalbox.clutch);
+  Serial.print(">clutch_raw:");
+  Serial.println(analogRead(CLUTCH_PEDAL_PIN));
 
   Serial.print("cycle time: ");
   Serial.println(cycle_time);
