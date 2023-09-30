@@ -58,7 +58,7 @@ void setup() {
   pedalbox.HIDcontroller.setRyAxisRange(0, 30000);
   pedalbox.HIDcontroller.setRzAxisRange(0, 1023);
 
-  timer.every(10, showPedalReadings);
+  timer.every(50, showPedalReadings);
   timer.every(50, updateGameController);
 }
 
