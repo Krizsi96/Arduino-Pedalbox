@@ -35,5 +35,8 @@ def main():
     SensorInterfaceHPP = file("Arduino_Pedalbox/include/SensorInterface.hpp")
     SensorInterfaceHPP.replacePart("virtual ~SensorInterface() = 0;", "virtual ~SensorInterface() {}")
 
+    PedalboxHPP = file("Arduino_Pedalbox/include/Pedalbox.hpp")
+    PedalboxHPP.replacePart("Joystick.hpp", "Joystick.h")
+
 if __name__ == '__main__':
     main()
