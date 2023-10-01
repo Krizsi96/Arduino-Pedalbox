@@ -2,7 +2,15 @@
 
 #define AUTO_SEND_STATE false
 
-Pedalbox::Pedalbox() {
+Pedalbox::Pedalbox()
+    : hid_controller(0x11, JOYSTICK_TYPE_JOYSTICK, 0,
+                     0,                    // Button Count, Hat Switch Count
+                     false, false, false,  // X and Y, Z Axis
+                     true, true, true,     // Rx, Ry, or Rz
+                     false, false,         // rudder, throttle
+                     false, false,         // accelerator, brake
+                     false                 // steering
+      ) {
   brake = Pedal();
   throttle = Pedal();
   clutch = Pedal();
