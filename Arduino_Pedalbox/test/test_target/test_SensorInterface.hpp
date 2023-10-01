@@ -4,7 +4,7 @@
 #include "LoadCell.hpp"
 #include "Potmeter.cpp"
 #include "Potmeter.hpp"
-#include "test_configuration.h"
+#include "testConfiguration.h"
 
 void read_potmeter_value(void) {
   // Given
