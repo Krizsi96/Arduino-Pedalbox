@@ -1,0 +1,14 @@
+#ifndef _BOARD_PINOUT_H_
+#define _BOARD_PINOUT_H_
+
+#define BRAKE_PEDAL_DOUT 16
+#define BRAKE_PEDAL_SCK 10
+#define BRAKE_PEDAL_DIN 14
+#define THROTTLE_PEDAL_PIN A1
+#define CLUTCH_PEDAL_PIN A2
+
+#define RGB_RED_PIN 9
+#define RGB_GREEN_PIN 6
+#define RGB_BLUE_PIN 5
+
+#endif  // _BOARD_PINOUT_H_
