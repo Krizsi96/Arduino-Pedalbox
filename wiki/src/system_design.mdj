@@ -24318,7 +24318,7 @@
 													"top": 49,
 													"width": 293.00146484375,
 													"height": 13,
-													"text": "+hid_controller: Joystick_",
+													"text": "-hid_controller: Joystick_",
 													"horizontalAlignment": 0
 												},
 												{
@@ -24609,13 +24609,30 @@
 													"height": 13,
 													"text": "+get_clutch_value(): int32_t",
 													"horizontalAlignment": 0
+												},
+												{
+													"_type": "UMLOperationView",
+													"_id": "AAAAAAGK6p8kpKcair4=",
+													"_parent": {
+														"$ref": "AAAAAAGK511wtXwkHvQ="
+													},
+													"model": {
+														"$ref": "AAAAAAGK6p8kiacRIJ4="
+													},
+													"font": "Arial;13;0",
+													"left": 1525,
+													"top": 312,
+													"width": 293.00146484375,
+													"height": 13,
+													"text": "+updateController(): void",
+													"horizontalAlignment": 0
 												}
 											],
 											"font": "Arial;13;0",
 											"left": 1520,
 											"top": 157,
 											"width": 303.00146484375,
-											"height": 158
+											"height": 173
 										},
 										{
 											"_type": "UMLReceptionCompartmentView",
@@ -33334,6 +33351,7 @@
 										"$ref": "AAAAAAGK511wtHwbnGE="
 									},
 									"name": "hid_controller",
+									"visibility": "private",
 									"type": "Joystick_"
 								},
 								{
@@ -33597,6 +33615,25 @@
 												"$ref": "AAAAAAGK6n0mk1maJSQ="
 											},
 											"type": "int32_t",
+											"direction": "return"
+										}
+									]
+								},
+								{
+									"_type": "UMLOperation",
+									"_id": "AAAAAAGK6p8kiacRIJ4=",
+									"_parent": {
+										"$ref": "AAAAAAGK511wtHwbnGE="
+									},
+									"name": "updateController",
+									"parameters": [
+										{
+											"_type": "UMLParameter",
+											"_id": "AAAAAAGK6p9c2qdgZQU=",
+											"_parent": {
+												"$ref": "AAAAAAGK6p8kiacRIJ4="
+											},
+											"type": "void",
 											"direction": "return"
 										}
 									]

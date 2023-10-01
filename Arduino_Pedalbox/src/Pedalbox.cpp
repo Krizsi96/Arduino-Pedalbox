@@ -1,5 +1,7 @@
 #include "Pedalbox.hpp"
 
+#define AUTO_SEND_STATE false
+
 Pedalbox::Pedalbox() {
   brake = Pedal();
   throttle = Pedal();
@@ -26,9 +28,13 @@ void Pedalbox::setClutchSensor(SensorInterface* sensor) {
 void Pedalbox::begin() {
   if (brake.get_sensor() != nullptr && throttle.get_sensor() != nullptr &&
       clutch.get_sensor() != nullptr)
-    hid_controller.begin();
+    hid_controller.begin(AUTO_SEND_STATE);
   else
     Serial.println("ERROR: Pedalbox sensors not set!");
+
+  hid_controller.setRxAxisRange(0, 1023);
+  hid_controller.setRyAxisRange(0, 30000);
+  hid_controller.setRzAxisRange(0, 1023);
 }
 
 void Pedalbox::refreshValues() {
@@ -42,3 +48,10 @@ int32_t Pedalbox::get_brake_value() { return brake_value; }
 int32_t Pedalbox::get_throttle_value() { return throttle_value; }
 
 int32_t Pedalbox::get_clutch_value() { return clutch_value; }
+
+void Pedalbox::updateController() {
+  hid_controller.setRxAxis(throttle_value);
+  hid_controller.setRyAxis(brake_value);
+  hid_controller.setRzAxis(clutch_value);
+  hid_controller.sendState();
+}

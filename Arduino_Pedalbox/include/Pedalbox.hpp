@@ -8,7 +8,6 @@
 
 class Pedalbox {
  public:
-  Joystick_ hid_controller;
   Pedalbox();
   ~Pedalbox();
   void setBrakeSensor(SensorInterface* sensor);
@@ -19,8 +18,10 @@ class Pedalbox {
   int32_t get_brake_value();
   int32_t get_throttle_value();
   int32_t get_clutch_value();
+  void updateController();
 
  private:
+  Joystick_ hid_controller;
   Pedal brake;
   Pedal throttle;
   Pedal clutch;

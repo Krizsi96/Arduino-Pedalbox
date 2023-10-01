@@ -32,9 +32,6 @@ void setup() {
   pedalbox.setThrottleSensor(&throttle_potmeter);
   pedalbox.setClutchSensor(&clutch_potmeter);
   pedalbox.begin();
-  pedalbox.hid_controller.setRxAxisRange(0, 1023);
-  pedalbox.hid_controller.setRyAxisRange(0, 30000);
-  pedalbox.hid_controller.setRzAxisRange(0, 1023);
 
   timer.every(100, showPedalReadings);
   timer.every(50, updateGameController);
@@ -68,9 +65,7 @@ bool showPedalReadings(void *) {
 }
 
 bool updateGameController(void *) {
-  pedalbox.hid_controller.setRxAxis(pedalbox.get_throttle_value());
-  pedalbox.hid_controller.setRyAxis(pedalbox.get_brake_value());
-  pedalbox.hid_controller.setRzAxis(pedalbox.get_clutch_value());
+  pedalbox.updateController();
   cycle_time = tack();
   return true;
 }
