@@ -7,10 +7,13 @@
 
 class Pedal {
  public:
+  Pedal(SensorInterface* sensor);
+  Pedal();
+  ~Pedal();
   int32_t readValue();
   void setOffset(int32_t new_offset);
-  Pedal(SensorInterface* sensor);
-  ~Pedal();
+  void set_sensor(SensorInterface* sensor);
+  SensorInterface* get_sensor();
 
  private:
   SensorInterface* sensor_;
