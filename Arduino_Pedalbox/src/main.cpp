@@ -5,6 +5,10 @@
 #include "Pedalbox.hpp"
 #include "Potmeter.hpp"
 #include "SensorConfig.h"
+#include "board_pinout.h"
+#include "jled.h"
+
+enum RGB { RED, GREEN, BLUE };
 
 ArduinoWrapper arduino;
 
@@ -19,13 +23,21 @@ Potmeter clutch_potmeter(CLUTCH_PEDAL_PIN);
 
 Pedalbox pedalbox;
 
+JLed rgb_led[] = {JLed(RGB_RED_PIN).Off(), JLed(RGB_GREEN_PIN).Off(),
+                  JLed(RGB_BLUE_PIN).Off()};
+
+JLedSequence rgb_sequence(JLedSequence::eMode::PARALLEL, rgb_led);
+
 bool showPedalReadings(void *);
 bool updateGameController(void *);
 void sensorConfiguration();
 void tick();
 int32_t tack();
+void InitModeRgb();
+void HearthbeatModeRgb();
 
 void setup() {
+  InitModeRgb();
   Serial.begin(9600);
   sensorConfiguration();
   pedalbox.setBrakeSensor(&brake_load_cell);
@@ -35,9 +47,12 @@ void setup() {
 
   timer.every(100, showPedalReadings);
   timer.every(50, updateGameController);
+
+  HearthbeatModeRgb();
 }
 
 void loop() {
+  rgb_sequence.Update();
   timer.tick();
 
   tick();
@@ -91,4 +106,21 @@ void sensorConfiguration() {
   clutch_potmeter.setFilter(CLUTCH_PEDAL_FILTER_TYPE,
                             CLUTCH_PEDAL_FILTER_FREQUENCY,
                             CLUTCH_PEDAL_INITIAL_VALUE);
+}
+
+void InitModeRgb() {
+  rgb_led[RED].Off();
+  rgb_led[GREEN].Off();
+  rgb_led[BLUE].Breathe(500).Forever();
+  rgb_sequence = JLedSequence(JLedSequence::eMode::PARALLEL, rgb_led);
+  rgb_sequence.Update();
+}
+
+void HearthbeatModeRgb() {
+  int heartbeat_period = 2500;
+  rgb_led[RED].Breathe(heartbeat_period).Forever();
+  rgb_led[GREEN].Breathe(heartbeat_period).Forever();
+  rgb_led[BLUE].Breathe(heartbeat_period).Forever();
+  rgb_sequence = JLedSequence(JLedSequence::eMode::PARALLEL, rgb_led);
+  rgb_sequence.Update();
 }
