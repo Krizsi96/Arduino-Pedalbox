@@ -40,9 +40,9 @@ void Pedalbox::begin() {
   else
     Serial.println("ERROR: Pedalbox sensors not set!");
 
-  hid_controller.setRxAxisRange(0, 1023);
-  hid_controller.setRyAxisRange(0, 30000);
-  hid_controller.setRzAxisRange(0, 1023);
+  hid_controller.setRxAxisRange(0, 390);
+  hid_controller.setRyAxisRange(2000, 67000);
+  hid_controller.setRzAxisRange(0, 280);
 }
 
 void Pedalbox::refreshValues() {
