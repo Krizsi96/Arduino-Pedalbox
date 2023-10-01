@@ -118,9 +118,9 @@ void InitModeRgb() {
 
 void HearthbeatModeRgb() {
   int heartbeat_period = 2500;
-  rgb_led[RED].Breathe(heartbeat_period).Forever();
+  rgb_led[RED].Off();
   rgb_led[GREEN].Breathe(heartbeat_period).Forever();
-  rgb_led[BLUE].Breathe(heartbeat_period).Forever();
+  rgb_led[BLUE].On();
   rgb_sequence = JLedSequence(JLedSequence::eMode::PARALLEL, rgb_led);
   rgb_sequence.Update();
 }
