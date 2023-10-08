@@ -21,15 +21,15 @@ Pedalbox::Pedalbox()
 
 Pedalbox::~Pedalbox() {}
 
-void Pedalbox::setBrakeSensor(SensorInterface* sensor) {
+void Pedalbox::setBrakeSensor(std::shared_ptr<SensorInterface> sensor) {
   brake.set_sensor(sensor);
 }
 
-void Pedalbox::setThrottleSensor(SensorInterface* sensor) {
+void Pedalbox::setThrottleSensor(std::shared_ptr<SensorInterface> sensor) {
   throttle.set_sensor(sensor);
 }
 
-void Pedalbox::setClutchSensor(SensorInterface* sensor) {
+void Pedalbox::setClutchSensor(std::shared_ptr<SensorInterface> sensor) {
   clutch.set_sensor(sensor);
 }
 
@@ -63,3 +63,11 @@ void Pedalbox::updateController() {
   hid_controller.setRzAxis(clutch_value);
   hid_controller.sendState();
 }
+
+int32_t Pedalbox::get_raw_brake_value() { return brake.RawReadingValue(); }
+
+int32_t Pedalbox::get_raw_throttle_value() {
+  return throttle.RawReadingValue();
+}
+
+int32_t Pedalbox::get_raw_clutch_value() { return clutch.RawReadingValue(); }

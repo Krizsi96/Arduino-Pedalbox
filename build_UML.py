@@ -19,9 +19,6 @@ def main():
     subprocess.run(['staruml', 'ejs', SOURCE_MODEL, '-t', '../UML_code_generator/.ejs/cpp-class.ejs', '-s', f'{PACKAGE_NAME}::@UMLClass', '-o', 'Arduino_Pedalbox/include/<%=filenamify(element.name)%>.hpp'])
     print(f"{CYAN}generate header files from UML interfaces{NC}")
     subprocess.run(['staruml', 'ejs', SOURCE_MODEL, '-t', '../UML_code_generator/.ejs/cpp-class.ejs', '-s', f'{PACKAGE_NAME}::@UMLInterface', '-o', 'Arduino_Pedalbox/include/<%=filenamify(element.name)%>.hpp'])
-    
-    print(f"{CYAN}format header files with clang (google style){NC}")
-    os.system('clang-format -i -style=Google Arduino_Pedalbox/include/*.hpp')
 
     print(f"{CYAN}post process code{NC}")
     TimeInterfaceHPP = file("Arduino_Pedalbox/include/TimeInterface.hpp")
@@ -37,6 +34,15 @@ def main():
 
     PedalboxHPP = file("Arduino_Pedalbox/include/Pedalbox.hpp")
     PedalboxHPP.replacePart("\"Joystick.hpp\"", "<Joystick.h>")
+    PedalboxHPP.replacePart("&lt;", "<")
+    PedalboxHPP.replacePart("&gt;", ">")
+
+    PedalHPP = file("Arduino_Pedalbox/include/Pedal.hpp")
+    PedalHPP.replacePart("&lt;", "<")
+    PedalHPP.replacePart("&gt;", ">")
+    
+    print(f"{CYAN}format header files with clang (google style){NC}")
+    os.system('clang-format -i -style=Google Arduino_Pedalbox/include/*.hpp')
 
 if __name__ == '__main__':
     main()
