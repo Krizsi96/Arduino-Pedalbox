@@ -7,14 +7,13 @@
 #include "SensorConfig.h"
 #include "board_pinout.h"
 #include "jled.h"
+#include "stopwatch.hpp"
 
 enum RGB { RED, GREEN, BLUE };
 
 ArduinoWrapper arduino;
 
 auto timer = timer_create_default();
-int32_t previous_time = 0;
-int32_t current_time = 0;
 int32_t cycle_time = 0;
 
 LoadCell brake_load_cell(BRAKE_PEDAL_SCK, BRAKE_PEDAL_DOUT);
@@ -28,11 +27,11 @@ JLed rgb_led[] = {JLed(RGB_RED_PIN).Off(), JLed(RGB_GREEN_PIN).Off(),
 
 JLedSequence rgb_sequence(JLedSequence::eMode::PARALLEL, rgb_led);
 
+Stopwatch measure_cycle_time;
+
 bool showPedalReadings(void *);
 bool updateGameController(void *);
 void sensorConfiguration();
-void tick();
-int32_t tack();
 void InitModeRgb();
 void HearthbeatModeRgb();
 
@@ -55,7 +54,7 @@ void loop() {
   rgb_sequence.Update();
   timer.tick();
 
-  tick();
+  measure_cycle_time.start();
   pedalbox.refreshValues();
 }
 
@@ -81,7 +80,7 @@ bool showPedalReadings(void *) {
 
 bool updateGameController(void *) {
   pedalbox.updateController();
-  cycle_time = tack();
+  cycle_time = measure_cycle_time.stop();
   return true;
 }
 
