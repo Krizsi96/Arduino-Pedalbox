@@ -84,13 +84,6 @@ bool updateGameController(void *) {
   return true;
 }
 
-void tick() { previous_time = micros(); }
-
-int32_t tack() {
-  current_time = micros();
-  return current_time - previous_time;
-}
-
 void sensorConfiguration() {
   brake_load_cell.setOffset(BRAKE_PEDAL_OFFSET);
   throttle_potmeter.setOffset(THROTTLE_PEDAL_OFFSET);
