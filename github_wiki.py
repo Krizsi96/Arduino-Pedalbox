@@ -25,3 +25,21 @@ if result.returncode != 0:
     sys.exit(1)
 
 print(f"{GREEN}Arduino-Pedalbox.wiki is up to date{NC}")
+
+# Check out the same branch as the project
+os.chdir('../')
+result = subprocess.run(['git', 'branch', '--show-current'], stdout=subprocess.PIPE)
+if result.returncode != 0:
+    print(f"{RED}Could not get current branch{NC}")
+    sys.exit(1)
+
+branch = result.stdout.decode('utf-8').strip()
+os.chdir('Arduino-Pedalbox.wiki')
+result = subprocess.run(['git', 'checkout', branch])
+if result.returncode != 0:
+    result = subprocess.run(['git', 'checkout', '-b', branch])
+    if result.returncode != 0:
+        print(f"{RED}Could not checkout branch {branch}{NC}")
+        sys.exit(1)
+
+print(f"{GREEN}Checked out branch {branch}{NC}")
