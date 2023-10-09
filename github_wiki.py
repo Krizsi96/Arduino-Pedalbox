@@ -3,12 +3,8 @@ import sys
 import subprocess
 import click
 
-GREEN = '\033[32m'
-RED = '\033[31m'
-NC = '\033[0m'
-
-wiki_directory = 'TripleX_tutorial'
-wiki_url = 'https://github.com/Krizsi96/TripleX_tutorial.git'
+wiki_directory = 'Arduino-Pedalbox.wiki'
+wiki_url = 'https://github.com/Krizsi96/Arduino-Pedalbox.wiki.git'
 
 @click.group()
 def git_commands():
@@ -16,21 +12,24 @@ def git_commands():
 
 @click.command(help="Checks out the same branch as the project")
 def checkout():
+    click.echo("Doing checkout...")
     if not os.path.isdir(wiki_directory):
-        print(f"{RED}{wiki_directory} is not cloned{NC}")
+        click.echo(click.style(f"{wiki_directory} is not cloned", fg="red"))
         clone_wiki()
 
     branch = getProjectBranch()
 
+    click.echo(f"Checking out {branch}...")
     os.chdir(wiki_directory)
     result = subprocess.run(['git', 'checkout', branch])
     if result.returncode != 0:
+        click.echo(f"{branch} does not exist in {wiki_directory}, let's create it...")
         result = subprocess.run(['git', 'checkout', '-b', branch])
         if result.returncode != 0:
-            print(f"{RED}Could not checkout branch {branch}{NC}")
+            click.echo(click.style(f"Could not checkout branch {branch}", fg="red"))
             sys.exit(1)
     os.chdir('..')
-    print(f"{GREEN}Checked out branch {branch}{NC}")
+    click.echo(click.style(f"Checked out branch {branch}", fg="green"))
 
 @click.command(help="Merge the project branch into the master branch")
 def merge():
@@ -41,48 +40,50 @@ def merge():
 
     result = subprocess.run(['git', 'merge', branch])
     if result.returncode != 0:
-        print(f"{RED}Could not merge branch {branch} into master{NC}")
+        click.echo(click.style(f"Could not merge branch {branch} into master", fg="red"))
         sys.exit(1)
-    print(f"{GREEN}Merged branch {branch} into master{NC}")
+    click.echo(click.style(f"Merged branch {branch} into master", fg="green"))
 
     result = subprocess.run(['git', 'branch', '-d', branch])
     if result.returncode != 0:
-        print(f"{RED}Could not delete branch {branch}{NC}")
+        click.echo(click.style(f"Could not delete branch {branch}", fg="red"))
         sys.exit(1)
-    print(f"{GREEN}Deleted branch {branch}{NC}")
+    click.echo(click.style(f"Deleted branch {branch}", fg="green"))
 
 def clone_wiki():
-    print(f"Cloning {wiki_directory}...")
+    click.echo(f"Cloning {wiki_directory}...")
     result = subprocess.run(['git', 'clone', wiki_url])
     if result.returncode != 0:
-        print(f"{RED}{wiki_directory} could not be cloned{NC}")
+        click.echo(click.style(f"{wiki_directory} could not be cloned", fg="red"))
         sys.exit(1)
-    print(f"{GREEN}{wiki_directory} is cloned{NC}")
+    click.echo(click.style(f"{wiki_directory} is cloned", fg="green"))
 
 def checkoutMaster():
     result = subprocess.run(['git', 'checkout', 'master'])
     if result.returncode != 0:
-        print(f"{RED}Could not checkout 'master', let's try 'main'{NC}")
+        click.echo(click.style(f"Could not checkout 'master', let's try 'main'", fg="red"))
         result = subprocess.run(['git', 'checkout', 'main'])
         if result.returncode != 0:
-            print(f"{RED}Could not checkout main{NC}")
+            click.echo(click.style(f"Could not checkout main", fg="red"))
             sys.exit(1)
-    print(f"{GREEN}Checked out master{NC}")
+    click.echo(click.style(f"Checked out master", fg="green"))
 
 def checkForUpdates():
+    click.echo("Checking for updates...")
     os.chdir(wiki_directory)
     checkoutMaster()
     result = subprocess.run(['git', 'pull'])
     if result.returncode != 0:
-        print(f"{RED}{wiki_directory} could not be pulled{NC}")
+        click.echo(click.style(f"{wiki_directory} could not be pulled", fg="red"))
         sys.exit(1)
     os.chdir('..')
-    print(f"{GREEN}{wiki_directory} is up to date{NC}")
+    click.echo(click.style(f"{wiki_directory} is up to date", fg="green"))
 
 def getProjectBranch():
+    click.echo("Geting project branch...")
     result = subprocess.run(['git', 'branch', '--show-current'], stdout=subprocess.PIPE)
     if result.returncode != 0:
-        print(f"{RED}Could not get current branch{NC}")
+        click.echo(click.style(f"Could not get current branch", fg="red"))
         sys.exit(1)
     branch = result.stdout.decode('utf-8').strip()
     return branch
