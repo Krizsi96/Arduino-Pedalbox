@@ -3,27 +3,27 @@ import subprocess
 import sys
 sys.path.append("../UML_code_generator")
 from code_postprocessing import file
+import click
 
-CYAN = '\033[36m'
-NC = '\033[m'
 SOURCE_MODEL = 'wiki/src/system_design.mdj'
 PACKAGE_NAME = 'Package1'
 
+
 def main():
-    print(f"{CYAN}generate diagrams form UML model{NC}")
+    click.echo(click.style("generate diagrams form UML model", fg='cyan'))
     subprocess.run(['staruml', 'image', SOURCE_MODEL, '-f', 'svg', '-o', 'wiki/src/diagrams/<%=filenamify(element.name)%>_diagram.svg'])
     subprocess.run(['python3', '../UML_code_generator/svg_postprocess.py', '/home/krizsi90/Documents/Projects/Arduino_Pedalbox/wiki/src/diagrams/'])
-    print()
+    click.echo()
 
-    print(f"{CYAN}generate header files from UML classes{NC}")
+    click.echo(click.style("generate header files from UML classes", fg='cyan'))
     subprocess.run(['staruml', 'ejs', SOURCE_MODEL, '-t', '../UML_code_generator/.ejs/cpp-class.ejs', '-s', f'{PACKAGE_NAME}::@UMLClass', '-o', 'Arduino_Pedalbox/include/<%=filenamify(element.name)%>.hpp'])
-    print(f"{CYAN}generate header files from UML interfaces{NC}")
+    click.echo(click.style("generate header files from UML interfaces", fg='cyan'))
     subprocess.run(['staruml', 'ejs', SOURCE_MODEL, '-t', '../UML_code_generator/.ejs/cpp-class.ejs', '-s', f'{PACKAGE_NAME}::@UMLInterface', '-o', 'Arduino_Pedalbox/include/<%=filenamify(element.name)%>.hpp'])
     
-    print(f"{CYAN}format header files with clang (google style){NC}")
+    click.echo(click.style("format header files with clang (google style)", fg='cyan'))
     os.system('clang-format -i -style=Google Arduino_Pedalbox/include/*.hpp')
 
-    print(f"{CYAN}post process code{NC}")
+    click.echo(click.style("post process code", fg='cyan'))
     TimeInterfaceHPP = file("Arduino_Pedalbox/include/TimeInterface.hpp")
     TimeInterfaceHPP.replacePart("~TimeInterface() = 0;", "~TimeInterface() {}")
 
