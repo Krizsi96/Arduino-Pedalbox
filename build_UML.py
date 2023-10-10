@@ -8,10 +8,16 @@ import click
 
 SOURCE_MODEL = 'system_design.mdj'
 PACKAGE_NAME = 'Package1'
+CODE_OUTPUT_DIR = 'Arduino_Pedalbox/include/'
+DIAGRAM_OUTPUT_DIR = 'wiki/src/diagrams/'
+
+@click.group()
+def cli():
+    pass
 
 @click.command(help="build source code from UML models")
 @click.argument('package', default=PACKAGE_NAME, required=False)
-@click.option('--with-diagrams', '-d', type=bool, help="Export diagrams also")
+@click.option('--with-diagrams', '-d', is_flag=True, help="Export diagrams also")
 def build_uml(package, with_diagrams):
     if with_diagrams:
         generateDiagrams()
@@ -20,10 +26,15 @@ def build_uml(package, with_diagrams):
     formatHeaderFiles()
     postProcessCode()
 
+@click.command(help="export diagrams from UML models")
+def export_diagrams():
+    generateDiagrams()
+
 def generateDiagrams():
     click.echo(click.style("generate diagrams form UML model", fg='cyan'))
-    subprocess.run(['staruml', 'image', SOURCE_MODEL, '-f', 'svg', '-o', 'wiki/src/diagrams/<%=filenamify(element.name)%>_diagram.svg'])
-    subprocess.run(['python3', '../UML_code_generator/svg_postprocess.py', '/home/krizsi90/Documents/Projects/Arduino_Pedalbox/wiki/src/diagrams/'])
+    subprocess.run(['staruml', 'image', SOURCE_MODEL, '-f', 'svg', '-o', f'{DIAGRAM_OUTPUT_DIR}<%=filenamify(element.name)%>_diagram.svg'])
+    current_directory = os.getcwd()
+    subprocess.run(['python3', '../UML_code_generator/svg_postprocess.py', f'{current_directory}/{DIAGRAM_OUTPUT_DIR}'])
     click.echo()
 
 def generateHeaderFiles(package):
@@ -40,7 +51,7 @@ def formatHeaderFiles():
     os.system('clang-format -i -style=Google Arduino_Pedalbox/include/*.hpp')
 
 def postProcessCode():
-    click.echo(click.style("post process code", fg='cyan'))
+    click.echo(click.style("postprocess code", fg='cyan'))
     TimeInterfaceHPP = file("Arduino_Pedalbox/include/TimeInterface.hpp")
     TimeInterfaceHPP.replacePart("~TimeInterface() = 0;", "~TimeInterface() {}")
 
@@ -56,5 +67,8 @@ def postProcessCode():
     PedalboxHPP.replacePart("\"Joystick.hpp\"", "<Joystick.h>")
     click.echo()
 
+cli.add_command(build_uml)
+cli.add_command(export_diagrams)
+
 if __name__ == '__main__':
-    build_uml()
+    cli()
