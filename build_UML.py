@@ -6,7 +6,7 @@ sys.path.append("../UML_code_generator")
 from code_postprocessing import file
 import click
 
-SOURCE_MODEL = 'wiki/src/system_design.mdj'
+SOURCE_MODEL = 'system_design.mdj'
 PACKAGE_NAME = 'Package1'
 
 @click.command(help="build source code from UML models")
