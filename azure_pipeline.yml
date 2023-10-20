@@ -59,6 +59,7 @@ stages:
       condition: always()
 
 - stage: Build
+  dependsOn: Test
   jobs:
   - job: Build
     displayName: 'Build the project'
