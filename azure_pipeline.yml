@@ -15,7 +15,7 @@ stages:
       returnCode: 0
     steps:
     - script: |
-          cd Arduino_Pedalbox
+          cd firmware
           source ~/.platformio/penv/bin/activate
           pio test -e host --junit-output-path .
           returnCode=$?
@@ -39,7 +39,7 @@ stages:
       returnCode: 0
     steps:
     - script: |
-          cd Arduino_Pedalbox
+          cd firmware
           source ~/.platformio/penv/bin/activate
           pio test -e leonardo --junit-output-path .
           returnCode=$?
@@ -65,13 +65,13 @@ stages:
     displayName: 'Build the project'
     steps:
     - script: |
-          cd Arduino_Pedalbox
+          cd firmware
           source ~/.platformio/penv/bin/activate
           pio run -e leonardo
       displayName: 'Build the project'
     - task: PublishBuildArtifacts@1
       inputs:
-        PathtoPublish: 'Arduino_Pedalbox/.pio/build/leonardo/firmware.hex'
+        PathtoPublish: 'firmware/.pio/build/leonardo/firmware.hex'
         ArtifactName: 'leonardo_firmware'
         publishLocation: 'Container'
       displayName: 'Publish the build artifacts'
