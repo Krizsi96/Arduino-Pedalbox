@@ -1,5 +1,7 @@
 #include "Pedalbox.hpp"
 
+#include "configs.h"
+
 #define AUTO_SEND_STATE false
 
 Pedalbox::Pedalbox()
@@ -40,15 +42,21 @@ void Pedalbox::begin() {
   else
     Serial.println("ERROR: Pedalbox sensors not set!");
 
-  hid_controller.setRxAxisRange(0, 390);
-  hid_controller.setRyAxisRange(2000, 67000);
-  hid_controller.setRzAxisRange(0, 280);
+  hid_controller.setRxAxisRange(0, 65535);
+  hid_controller.setRyAxisRange(0, 65535);
+  hid_controller.setRzAxisRange(0, 65535);
 }
 
 void Pedalbox::refreshValues() {
-  brake_value = brake.readValue();
-  throttle_value = throttle.readValue();
-  clutch_value = clutch.readValue();
+  int32_t unmapped_brake_value = brake.readValue();
+  int32_t unmapped_throttle_value = throttle.readValue();
+  int32_t unmapped_clutch_value = clutch.readValue();
+
+  brake_value = unmapped_brake_value / (BRAKE_RANGE_MAX / 65535);
+  throttle_value = map(unmapped_throttle_value, THROTTLE_RANGE_MIN,
+                       THROTTLE_RANGE_MAX, 0, 65535);
+  clutch_value =
+      map(unmapped_clutch_value, CLUTCH_RANGE_MIN, CLUTCH_RANGE_MAX, 0, 65535);
 }
 
 int32_t Pedalbox::get_brake_value() { return brake_value; }
