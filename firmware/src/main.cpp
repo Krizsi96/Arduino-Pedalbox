@@ -4,8 +4,8 @@
 #include "LoadCell.hpp"
 #include "Pedalbox.hpp"
 #include "Potmeter.hpp"
-#include "SensorConfig.h"
 #include "board_pinout.h"
+#include "configs.h"
 #include "jled.h"
 #include "stopwatch.hpp"
 
